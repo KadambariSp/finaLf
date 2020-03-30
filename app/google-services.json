@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "13488350164",
+    "firebase_url": "https://eudcate-to-elevate.firebaseio.com",
+    "project_id": "eudcate-to-elevate",
+    "storage_bucket": "eudcate-to-elevate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13488350164:android:930ec85a239b668717ac41",
+        "android_client_info": {
+          "package_name": "com.example.eudcatetoelevate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13488350164-hi38ronbj16j3u6cgs0hqkeghp1vcbu4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eudcatetoelevate",
+            "certificate_hash": "c89c05903fc7432808d9feaaa63430e00e6cdcb4"
+          }
+        },
+        {
+          "client_id": "13488350164-h0gqib0lghgthg0svd5akkm6mn8shrtj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMmVeeUKMBCw7ZxjGTl_ljnanzGUgKCEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13488350164-h0gqib0lghgthg0svd5akkm6mn8shrtj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

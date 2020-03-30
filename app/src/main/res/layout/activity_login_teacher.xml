@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".LoginTeacher">
+
+
+    <Button
+        android:id="@+id/buttonLoginTeacher"
+        android:layout_width="139dp"
+        android:layout_height="38dp"
+        android:background="@drawable/buttonbg"
+        android:elevation="10dp"
+
+        android:fontFamily="@font/montserratmedium"
+        android:shadowColor="#d3d3d3"
+        android:text="Login"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordTeacher"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <EditText
+        android:id="@+id/editTextPasswordTeacher"
+        android:layout_width="248dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/etbg"
+        android:elevation="3dp"
+        android:fontFamily="@font/montserratmedium"
+
+        android:hint="   Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <EditText
+        android:id="@+id/editTextUsernameTeacher"
+        android:layout_width="248dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/etbg"
+        android:elevation="3dp"
+        android:fontFamily="@font/montserratmedium"
+        android:hint="   Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="278dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="39dp"
+        android:src="@drawable/group1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/TvRegisterTeachers"
+        android:layout_width="307dp"
+        android:layout_height="40dp"
+        android:text="Not registered? SignUp here"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserratregular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoginTeacher"
+        app:layout_constraintVertical_bias="0.292"
+        android:layout_gravity="center_horizontal" />
+
+    <ProgressBar
+        android:id="@+id/progressBarTeacherLogin"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoginTeacher"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="244dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="104dp"
+        android:text="EDUCATE TO ELEVATE"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserratmedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="256dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:text="Welcome To \n LEARN FORWARD"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/montserratmedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

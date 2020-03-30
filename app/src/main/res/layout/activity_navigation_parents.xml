@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_parents"
+    tools:context=".NavigationParents">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/nav_view_parents"
+        android:background="#FFF"
+        android:theme="@style/navigationTheme"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_layout_parents"
+        app:menu="@menu/menuparents"
+        android:layout_height="match_parent">
+
+    </com.google.android.material.navigation.NavigationView>
+    <LinearLayout
+        android:id="@+id/contentp"
+        android:orientation="vertical"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/navclickparent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/parents"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

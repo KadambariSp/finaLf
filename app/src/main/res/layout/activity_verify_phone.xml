@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FFF"
+    tools:context=".VerifyPhone">
+
+
+    <Button
+        android:id="@+id/buttonSendOtpFy"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:background="@drawable/buttonbg"
+        android:elevation="10dp"
+        android:fontFamily="@font/montserratmedium"
+        android:shadowColor="#d3d3d3"
+        android:text="Send Otp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMobileCheckFy"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/editTextMobileCheckFy"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="244dp"
+        android:background="@drawable/etbg"
+        android:editable="false"
+        android:elevation="3dp"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="@font/montserratmedium"
+        android:gravity="center"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerStudent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="285dp"
+        android:layout_height="251dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Spinner
+        android:id="@+id/spinnerFY"
+        android:layout_width="96dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/etbg"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSendOtpFy"
+        app:layout_constraintEnd_toStartOf="@+id/editTextMobileCheckFy"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.533" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

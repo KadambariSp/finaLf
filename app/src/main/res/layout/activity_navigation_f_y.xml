@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_fy"
+    tools:context=".NavigationParents">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/nav_view_fy"
+        android:background="#FFF"
+        android:theme="@style/navigationTheme"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_layout_fy"
+        app:menu="@menu/menufy"
+        android:layout_height="match_parent">
+
+    </com.google.android.material.navigation.NavigationView>
+    <LinearLayout
+        android:id="@+id/contentfy"
+        android:orientation="vertical"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/navclickfy"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/student1"
+                />
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/app_name_wow"
+                        android:textColor="@color/darkblue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Computer Department"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/fredoka"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <RelativeLayout
+                        android:layout_below="@id/app_name_wow"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#FFF"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:elevation="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Search text...."
+                            android:fontFamily="@font/montserratmedium"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/explore"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"/>
+
+
+
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:background="#FFF"
+                            android:layout_width="60dp"
+                            android:elevation="10dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/chemistry"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CHEMISTRY"
+                            android:textSize="12sp"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColor="#000"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:background="#FFF"
+                            android:layout_width="60dp"
+                            android:elevation="10dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/clang"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="C"
+
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColor="#000"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:background="#FFF"
+                            android:layout_width="60dp"
+                            android:elevation="10dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/edg"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="EDG"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColor="#000"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:background="#FFF"
+                            android:layout_width="60dp"
+                            android:elevation="10dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/maths"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="MATHS"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColor="#000"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#F6F4E7"
+                    android:layout_marginLeft="20dp">
+                    <LinearLayout
+                        android:background="#EFE4AB"
+                        android:layout_width="170dp"
+                        android:id="@+id/codingRelativeLayout"
+                        android:orientation="vertical"
+                        android:layout_height="280dp"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coding"
+                            android:textSize="25sp"
+                            android:textColor="#000"
+                            android:layout_marginTop="50dp"
+                            android:textAllCaps="true"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/fredoka"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:textSize="19sp"
+                            android:textColor="@color/darkblue"
+                            android:fontFamily="@font/montserratmedium"
+                            android:text="Every popular Things about Coding"
+                            />
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_toRightOf="@id/codingRelativeLayout"
+                        android:layout_height="280dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFF"
+                        />
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:padding="20dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Learn Coding"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:fontFamily="@font/fredoka"
+                            android:textAllCaps="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="How to????"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

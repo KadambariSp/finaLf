@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    tools:context=".PanelSelection">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_height="300dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:padding="20dp"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="60dp"
+            app:expandedTitleMarginStart="20dp"
+            app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="COMPUTER DEPARTMENT"
+            >
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarid"
+
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Title">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#fcfcfc"
+            android:gravity="center"
+            android:id="@+id/ll">
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:id="@+id/studentPanelSelection"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="74dp"
+
+                            android:padding="10dp"
+                            android:src="@drawable/student1" />
+
+                        <TextView
+                            android:textSize="15sp"
+                            android:id="@+id/studentPanel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Student Panel"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/montserratmedium" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+
+                        <TextView
+                            android:id="@+id/studInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textSize="10sp"
+                            android:text="For First Second and Third year Students of Computer Department"
+                            android:textColor="@color/colorPrimary"
+                            app:fontFamily="@font/montserratmedium" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/teacherPanelSelection"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="74dp"
+
+                            android:padding="10dp"
+                            android:src="@drawable/teacher1" />
+                        <TextView
+                            android:textSize="15sp"
+                            android:id="@+id/teacherPanel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            app:fontFamily="@font/montserratmedium"
+                            android:layout_marginTop="10dp"
+                            android:text="Teacher Panel"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+
+                        <TextView
+                            android:id="@+id/teachInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:textSize="10sp"
+                            android:gravity="center"
+                            android:fontFamily="@font/montserratmedium"
+                            android:padding="5dp"
+                            android:text="Admin Panel For Permanent Faculties"
+                            android:textColor="@color/colorPrimary" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/parentPanelSelection"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="74dp"
+
+                            android:padding="10dp"
+                            android:src="@drawable/parents" />
+                        <TextView
+                            android:id="@+id/parentPanel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15sp"
+                            app:fontFamily="@font/cabin_medium"
+                            android:layout_marginTop="10dp"
+                            android:text="Parent Panel"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/lightgray"
+                            android:layout_margin="10dp"/>
+
+                        <TextView
+                            android:id="@+id/parentInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:textSize="10sp"
+                            android:padding="5dp"
+                            android:fontFamily="@font/montserratmedium"
+                            android:text="All parents of GPMCO department"
+                            android:textColor="@color/colorPrimary" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

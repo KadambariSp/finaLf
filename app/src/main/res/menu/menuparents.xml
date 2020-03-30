@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_parents"
+            android:icon="@drawable/home"
+            android:title="Home"></item>
+        <item
+            android:id="@+id/nav_explore_parents"
+            android:icon="@drawable/explore"
+            android:title="Explore Features"></item>
+
+        <item
+            android:id="@+id/nav_aboutus_parents"
+            android:icon="@drawable/aboutus"
+            android:title="About Learn Forward"></item>
+
+    </group>
+    <item android:title="Profile">
+
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_account_parents"
+                    android:icon="@drawable/account"
+                    android:title="Your Account"></item>
+                <item
+                    android:id="@+id/nav_logout_parents"
+                    android:icon="@drawable/logout"
+                    android:title="Log Out"></item>
+                <item
+                    android:id="@+id/nav_profile_parents"
+                    android:icon="@drawable/submitprofile"
+                    android:title=" Submit Profile">
+
+                </item>
+            </group>
+        </menu>
+    </item>
+</menu>
