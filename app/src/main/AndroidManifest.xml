@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logoapp"
+        android:icon="@mipmap/iconapp"
         android:label="LEARNFORWARDGPMCO"
-        android:roundIcon="@drawable/logoapp"
+        android:roundIcon="@mipmap/iconapp"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".NavigationFY"></activity>

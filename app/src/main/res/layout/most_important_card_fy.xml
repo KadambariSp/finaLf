@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/mImp_ImageFy"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/clang"
+            />
+        <TextView
+            android:id="@+id/mImp_TitleFy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code Code and Code"
+            android:layout_toRightOf="@id/mImp_ImageFy"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:fontFamily="@font/fredoka"/>
+        <TextView
+            android:id="@+id/mImp_DescFy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mImp_TitleFy"
+            android:textColor="#fece2f"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Coding is Base for Computer Engineering What will you do other than that?"
+            android:layout_toRightOf="@id/mImp_ImageFy"
+            android:padding="10dp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

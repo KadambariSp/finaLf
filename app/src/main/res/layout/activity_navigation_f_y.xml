@@ -30,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
+                android:scaleType="centerCrop"
                 android:padding="5dp"
                 android:id="@+id/navclickfy"
                 android:layout_width="50dp"
@@ -49,16 +50,16 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/app_name_wow"
-                        android:textColor="@color/darkblue"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Computer Department"
-                        android:textSize="28sp"
-                        android:fontFamily="@font/fredoka"
                         android:layout_centerHorizontal="true"
-                        />
+                        android:fontFamily="@font/fredoka"
+                        android:text="FIRST YEAR (BOTH SHIFTS)"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
                     <RelativeLayout
                         android:layout_below="@id/app_name_wow"
                         android:layout_width="match_parent"
@@ -73,21 +74,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Search text...."
+                            android:text="In the Very First Year of Your diploma You have to learn something other than coding Like , See below "
                             android:fontFamily="@font/montserratmedium"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="15dp"
+                            android:textStyle="italic"
+                            android:textColor="@color/black_overlay"
+                            android:textSize="11sp"
                             />
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_alignParentRight="true"
-                            android:src="@drawable/explore"
-                            android:layout_centerVertical="true"
-                            android:layout_marginRight="15dp"/>
-
-
-
 
 
                     </RelativeLayout>
@@ -123,39 +117,6 @@
                             android:layout_height="wrap_content"
                             android:text="CHEMISTRY"
                             android:textSize="12sp"
-                            android:textAlignment="center"
-                            android:gravity="center_horizontal"
-                            android:fontFamily="@font/montserratmedium"
-                            android:textColor="#000"
-
-                            />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-                        <RelativeLayout
-                            android:background="#FFF"
-                            android:layout_width="60dp"
-                            android:elevation="10dp"
-                            android:layout_height="60dp"
-                            android:layout_margin="10dp">
-                            <ImageView
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:src="@drawable/clang"
-                                android:layout_centerInParent="true" />
-                        </RelativeLayout>
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="C"
-
                             android:textAlignment="center"
                             android:gravity="center_horizontal"
                             android:fontFamily="@font/montserratmedium"
@@ -264,13 +225,14 @@
                             android:textSize="19sp"
                             android:textColor="@color/darkblue"
                             android:fontFamily="@font/montserratmedium"
-                            android:text="Every popular Things about Coding"
+                            android:text="WHY??????"
                             />
                     </LinearLayout>
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="match_parent"
+                        android:id="@+id/codingRecyclerView"
                         android:layout_toRightOf="@id/codingRelativeLayout"
-                        android:layout_height="280dp"
+                        android:layout_height="300dp"
                         android:layout_marginTop="10dp"
                         android:background="#FFF"
                         />
@@ -299,22 +261,25 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Learn Coding"
-                            android:textSize="20sp"
+                            android:text="Learn Coding just to clear your base"
+                            android:textSize="13sp"
                             android:textColor="#000"
                             android:fontFamily="@font/fredoka"
                             android:textAllCaps="true"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="How to????"
                             android:layout_alignParentRight="true"
-                            android:layout_centerVertical="true"/>
+                            android:layout_centerVertical="true"
+                            android:text="How to????"
+                            android:textColor="@android:color/holo_red_light" />
 
                     </RelativeLayout>
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
+                        android:id="@+id/mostImpRecyclerViewFy"
                         />
 
                 </LinearLayout>
