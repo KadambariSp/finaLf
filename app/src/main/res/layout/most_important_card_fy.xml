@@ -8,15 +8,15 @@
 
     <RelativeLayout
         android:layout_width="300dp"
-        android:layout_height="190dp"
+        android:layout_height="290dp"
         android:padding="10dp">
 
         <ImageView
             android:id="@+id/mImp_ImageFy"
-            android:layout_width="100dp"
+            android:layout_width="200dp"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/clang"
+            android:src="@drawable/coder"
             />
         <TextView
             android:id="@+id/mImp_TitleFy"
@@ -39,6 +39,7 @@
             android:text="Coding is Base for Computer Engineering What will you do other than that?"
             android:layout_toRightOf="@id/mImp_ImageFy"
             android:padding="10dp"
+            android:textSize="11sp"
             />
 
     </RelativeLayout>

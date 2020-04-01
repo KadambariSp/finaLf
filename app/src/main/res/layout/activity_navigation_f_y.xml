@@ -109,7 +109,7 @@
                             <ImageView
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
-                                android:src="@drawable/chemistry"
+                                android:src="@drawable/chemistry1"
                                 android:layout_centerInParent="true" />
                         </RelativeLayout>
                         <TextView
@@ -142,7 +142,7 @@
                             <ImageView
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
-                                android:src="@drawable/edg"
+                                android:src="@drawable/edg1"
                                 android:layout_centerInParent="true" />
                         </RelativeLayout>
                         <TextView
@@ -174,7 +174,7 @@
                             <ImageView
                                 android:layout_width="60dp"
                                 android:layout_height="60dp"
-                                android:src="@drawable/maths"
+                                android:src="@drawable/maths1"
                                 android:layout_centerInParent="true" />
                         </RelativeLayout>
                         <TextView
@@ -278,7 +278,7 @@
                     </RelativeLayout>
                     <androidx.recyclerview.widget.RecyclerView
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="300dp"
                         android:id="@+id/mostImpRecyclerViewFy"
                         />
 

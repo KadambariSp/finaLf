@@ -49,44 +49,27 @@ public class NavigationFY extends AppCompatActivity implements NavigationView.On
         mostImpFyRecyclerView();
         codingRecyclerView();
         navigationDrawerOpen();
-    }
-
-
-    private void mostImpFyRecyclerView() {
+    }private void mostImpFyRecyclerView() {
         mostImpFyRecyclerView.setHasFixedSize(true);
         mostImpFyRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
-
-
         ArrayList<MostImpHelperClassFy>mostImpFyLocations=new ArrayList<>();
-        mostImpFyLocations.add(new MostImpHelperClassFy(R.drawable.internet,"Internet is all you need","As you All know that internet is wide resource to  Learn anything! Go and do it now!"));
-        mostImpFyLocations.add(new MostImpHelperClassFy(R.drawable.library,"C programming Books ","Our Curriculum has bunch of options to explore knowledge! go and check books from libraryy!!"));
-        mostImpFyLocations.add(new MostImpHelperClassFy(R.drawable.code,"All IDE's , text Editors","Practical Knowledge is Way better than Therotical one!! if you sincerely do all practicals by your own then nobody will stop you!! "));
-
+        mostImpFyLocations.add(new MostImpHelperClassFy(R.drawable.internet1,"Internet is all you need","As you All know that internet is wide resource to  Learn anything! Go and do it now!"));
+        mostImpFyLocations.add(new MostImpHelperClassFy(R.drawable.library1,"C programming Books ","Our Curriculum has bunch of options to explore knowledge! go and check books from libraryy!!"));
+        mostImpFyLocations.add(new MostImpHelperClassFy(R.drawable.coder,"All IDE's , text Editors","Practical Knowledge is Way better than Therotical one!! if you sincerely do all practicals by your own then nobody will stop you!! "));
         adapterMostImpFy=new MostImpAdapterFy(mostImpFyLocations);
         mostImpFyRecyclerView.setAdapter(adapterMostImpFy);
-
     }
 
     private void codingRecyclerView() {
-
-
         codingRecyclerView.setHasFixedSize(true);
         codingRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
-
         ArrayList<CodingFyHelperClass>codingFyLocations=new ArrayList<>();
         codingFyLocations.add(new CodingFyHelperClass(R.drawable.basics,"start from Basic!","As you know to Learn Anything you first have to clear it's base so just Do it!"));
         codingFyLocations.add(new CodingFyHelperClass(R.drawable.clang,"C Language ","Assembly Language is powerful yet difficult , So c comes into picture!!"));
         codingFyLocations.add(new CodingFyHelperClass(R.drawable.csy,"C ++","C++ Object oriented Programming it is Advanced Version Of C !"));
-        codingFyLocations.add(new CodingFyHelperClass(R.drawable.htmllang,"HTML","Web Development is huge place for one who loves to do creative yet techy things !"));
+        codingFyLocations.add(new CodingFyHelperClass(R.drawable.htmllang1,"HTML","Web Development is huge place for one who loves to do creative yet techy things !"));
         adapterFy=new CodingAdapterFy(codingFyLocations);
         codingRecyclerView.setAdapter(adapterFy);
-
-
-
-
-
-
-
     }
 
 
@@ -146,6 +129,13 @@ public class NavigationFY extends AppCompatActivity implements NavigationView.On
                     Intent i = new Intent(NavigationFY.this, PanelSelection.class);
                     startActivity(i);
                     break;
+                case R.id.nav_profile_fy:
+                    Intent i2=new Intent(NavigationFY.this,ProfileActivityStudentFY.class);
+                    startActivity(i2);
+                    break;
+                case R.id.nav_account_fy:
+                    Intent i3=new Intent(NavigationFY.this,ViewProfileStudentFY.class);
+                    startActivity(i3);
 
 
             }

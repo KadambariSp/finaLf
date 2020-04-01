@@ -5,9 +5,11 @@
     android:layout_height="340dp"
     android:layout_margin="10dp"
     app:cardCornerRadius="2dp"
+    app:cardBackgroundColor="#FFF"
     app:cardElevation="8dp">
 
     <LinearLayout
+        android:background="#FFF"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -16,8 +18,8 @@
         <ImageView
             android:id="@+id/codingFyImage"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:src="@drawable/code"
+            android:layout_height="150dp"
+            android:src="@drawable/softwareengineer"
             android:scaleType="centerCrop"/>
         <TextView
             android:id="@+id/codingFyTitle"

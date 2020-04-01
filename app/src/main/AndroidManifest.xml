@@ -4,12 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/iconapp"
+        android:icon="@mipmap/ic_launcher"
         android:label="LEARNFORWARDGPMCO"
-        android:roundIcon="@mipmap/iconapp"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NavigationFY"></activity>
+        <activity android:name=".ViewProfileStudentFY"></activity>
+        <activity android:name=".ProfileActivityStudentFY" />
+        <activity android:name=".NavigationFY" />
         <activity android:name=".NavigationParents" />
         <activity android:name=".ParentSecretCodeCheck" />
         <activity android:name=".NavigationTeachers" />
