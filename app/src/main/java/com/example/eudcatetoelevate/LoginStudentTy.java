@@ -3,6 +3,7 @@ package com.example.eudcatetoelevate;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -29,7 +30,7 @@ import java.util.Objects;
 import static com.google.firebase.auth.FirebaseAuth.getInstance;
 
 public class LoginStudentTy extends AppCompatActivity {
-   /* EditText txtEmail,txtPassword;
+    EditText txtEmail,txtPassword;
     ProgressBar progressBar;
     Button btn_student_Login;
     private TextView Student_signup;
@@ -49,13 +50,18 @@ public class LoginStudentTy extends AppCompatActivity {
                 userEmail = firebaseUser.getEmail();
                 userRef=rootRef.child("THIRD YEAR");
                 useridRef = userRef.child(userid);
+                final ProgressDialog pd = new ProgressDialog(LoginStudentTy.this);
+                pd.setTitle("Logging Student");
+                pd.setMessage("Please wait logging in");
+                pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.show();
 
                 useridRef.child("username").child("username").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         sameEmail = (String) dataSnapshot.getValue();
                         if (Objects.equals(userEmail, sameEmail)) {
-                            Intent intent = new Intent(LoginStudentTy.this, PhoneNumberCheckStudentTy.class);
+                            Intent intent = new Intent(LoginStudentTy.this, NavigationTY.class);
                             startActivity(intent);
                             finish();
                         }
@@ -72,12 +78,12 @@ public class LoginStudentTy extends AppCompatActivity {
                 Toast.makeText(LoginStudentTy.this, "Please Sign in ", Toast.LENGTH_SHORT).show();
             }
         }
-    };*/
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_student_ty);
-    /*    txtEmail=(EditText) findViewById(R.id.etUsernameTyLogin);
+       txtEmail=(EditText) findViewById(R.id.etUsernameTyLogin);
         txtPassword=(EditText)findViewById(R.id.etPasswordTyLogin);
         btn_student_Login   = (Button) findViewById(R.id.buttonLoginStudentTy);
         Student_signup=(TextView)findViewById(R.id.TvRegisterStudentTy);
@@ -109,7 +115,11 @@ public class LoginStudentTy extends AppCompatActivity {
                 }
 
 
-                progressBar.setVisibility(View.VISIBLE);
+                final ProgressDialog pd = new ProgressDialog(LoginStudentTy.this);
+                pd.setTitle("Logging Student");
+                pd.setMessage("Please wait validating credentials and logging in.");
+                pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.show();
                 mAuth .signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(LoginStudentTy.this, new OnCompleteListener<AuthResult>() {
                             @Override
@@ -126,7 +136,7 @@ public class LoginStudentTy extends AppCompatActivity {
                                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                                 loginEmail = (String) dataSnapshot.getValue();
                                                 if (Objects.equals(email, loginEmail)) {
-                                                    startActivity(new Intent(LoginStudentTy.this, PhoneNumberCheckStudentTy.class));
+                                                    startActivity(new Intent(LoginStudentTy.this, NavigationTY.class));
                                                 } else {
                                                     FirebaseAuth.getInstance().signOut();
                                                     Toast.makeText(LoginStudentTy.this, "Please login using a Student account only ", Toast.LENGTH_SHORT).show();
@@ -175,6 +185,6 @@ public class LoginStudentTy extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         mAuth.removeAuthStateListener(authStateListener);
-*/
+
     }
 }

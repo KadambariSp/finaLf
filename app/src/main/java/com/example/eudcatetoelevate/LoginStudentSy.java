@@ -3,6 +3,7 @@ package com.example.eudcatetoelevate;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -29,7 +30,7 @@ import java.util.Objects;
 import static com.google.firebase.auth.FirebaseAuth.getInstance;
 
 public class LoginStudentSy extends AppCompatActivity {
-   /* EditText txtEmail,txtPassword;
+    EditText txtEmail, txtPassword;
     ProgressBar progressBar;
     Button btn_student_Login;
     private TextView Student_signup;
@@ -45,17 +46,22 @@ public class LoginStudentSy extends AppCompatActivity {
         public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
             FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
             if (firebaseUser != null) {
-                String userid=firebaseUser.getUid();
+                String userid = firebaseUser.getUid();
                 userEmail = firebaseUser.getEmail();
-                userRef=rootRef.child("SECOND YEAR");
+                userRef = rootRef.child("SECOND YEAR");
                 useridRef = userRef.child(userid);
+                final ProgressDialog pd = new ProgressDialog(LoginStudentSy.this);
+                pd.setTitle("Logging Student");
+                pd.setMessage("Wait...");
+                pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.show();
 
                 useridRef.child("username").child("username").addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         sameEmail = (String) dataSnapshot.getValue();
                         if (Objects.equals(userEmail, sameEmail)) {
-                            Intent intent = new Intent(LoginStudentSy.this, PhoneNumberCheckStudentSy.class);
+                            Intent intent = new Intent(LoginStudentSy.this, NavigationSY.class);
                             startActivity(intent);
                             finish();
                         }
@@ -67,52 +73,55 @@ public class LoginStudentSy extends AppCompatActivity {
                     }
                 });
 
-            }
-            else{
+            } else {
                 Toast.makeText(LoginStudentSy.this, "Please Sign in ", Toast.LENGTH_SHORT).show();
             }
         }
-    };*/
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_student_sy);
-       /* txtEmail=(EditText) findViewById(R.id.etUsernameSyLogin);
-        txtPassword=(EditText)findViewById(R.id.etPasswordSyLogin);
-        btn_student_Login   = (Button) findViewById(R.id.buttonLoginStudentSy);
-        Student_signup=(TextView)findViewById(R.id.TvRegisterStudentSy);
-        progressBar=(ProgressBar) findViewById(R.id.progressBarSyLogin);
+        txtEmail = (EditText) findViewById(R.id.etUsernameSyLogin);
+        txtPassword = (EditText) findViewById(R.id.etPasswordSyLogin);
+        btn_student_Login = (Button) findViewById(R.id.buttonLoginStudentSy);
+        Student_signup = (TextView) findViewById(R.id.TvRegisterStudentSy);
+        progressBar = (ProgressBar) findViewById(R.id.progressBarSyLogin);
 
         mAuth = getInstance();
         database = FirebaseDatabase.getInstance();
         rootRef = database.getReference();
 
-        btn_student_Login.setOnClickListener(new View.OnClickListener(){
+        btn_student_Login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                final String email =txtEmail.getText().toString().trim();
-                String password=txtPassword.getText().toString().trim();
-                if(TextUtils.isEmpty(email)){
+            public void onClick(View v) {
+                final String email = txtEmail.getText().toString().trim();
+                String password = txtPassword.getText().toString().trim();
+                if (TextUtils.isEmpty(email)) {
                     Toast.makeText(LoginStudentSy.this, "Please enter email", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(TextUtils.isEmpty(password)){
+                if (TextUtils.isEmpty(password)) {
                     Toast.makeText(LoginStudentSy.this, "Please enter password", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(password.length()<6){
+                if (password.length() < 6) {
                     Toast.makeText(LoginStudentSy.this, "Password too short", Toast.LENGTH_SHORT).show();
                 }
+                final ProgressDialog pd = new ProgressDialog(LoginStudentSy.this);
+                pd.setTitle("Logging Student");
+                pd.setMessage("Please wait validating credentials and logging in.");
+                pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.show();
 
-
-                progressBar.setVisibility(View.VISIBLE);
-                mAuth .signInWithEmailAndPassword(email, password)
+                mAuth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(LoginStudentSy.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 progressBar.setVisibility(View.GONE);
                                 if (task.isSuccessful()) {
-                                    if(mAuth.getCurrentUser().isEmailVerified()) {
+                                    if (mAuth.getCurrentUser().isEmailVerified()) {
                                         String userid = mAuth.getCurrentUser().getUid();
                                         userRef = rootRef.child("SECOND YEAR");
                                         useridRef = userRef.child(userid);
@@ -122,12 +131,12 @@ public class LoginStudentSy extends AppCompatActivity {
                                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                                 loginEmail = (String) dataSnapshot.getValue();
                                                 if (Objects.equals(email, loginEmail)) {
-                                                    startActivity(new Intent(LoginStudentSy.this, PhoneNumberCheckStudentSy.class));
+                                                    startActivity(new Intent(LoginStudentSy.this, NavigationSY.class));
                                                 } else {
                                                     FirebaseAuth.getInstance().signOut();
                                                     Toast.makeText(LoginStudentSy.this, "Please login using a Student account only ", Toast.LENGTH_SHORT).show();
                                                     finish();
-                                                    startActivity(new Intent(LoginStudentSy.this,LoginStudentTy.class));
+                                                    startActivity(new Intent(LoginStudentSy.this, LoginStudentTy.class));
                                                 }
                                             }
 
@@ -136,13 +145,13 @@ public class LoginStudentSy extends AppCompatActivity {
                                                 //error message
                                             }
                                         });
-                                    }else{
-                                        Toast.makeText(LoginStudentSy.this,"Please verify your email address",Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        Toast.makeText(LoginStudentSy.this, "Please verify your email address", Toast.LENGTH_SHORT).show();
 
 
                                     }
                                 } else {
-                                    Toast.makeText(LoginStudentSy.this, task.getException().getMessage(),Toast.LENGTH_LONG).show();
+                                    Toast.makeText(LoginStudentSy.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
 
                                 }
 
@@ -155,7 +164,7 @@ public class LoginStudentSy extends AppCompatActivity {
         Student_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginStudentSy.this,RegisterStudentSy.class));
+                startActivity(new Intent(LoginStudentSy.this, RegisterStudentSy.class));
             }
         });
 
@@ -172,6 +181,6 @@ public class LoginStudentSy extends AppCompatActivity {
         super.onStop();
         mAuth.removeAuthStateListener(authStateListener);
 
-*/
+
     }
 }

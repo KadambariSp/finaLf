@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardBackgroundColor="#FFF"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratmedium"
+        android:id="@+id/rTitleTv"
+        android:text="Title"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/rImageView"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_height="300dp"
+        android:background="@drawable/loading"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserratlight"
+        android:textStyle="italic"
+        android:maxLines="3"
+        android:textColor="@color/color3"
+        android:id="@+id/rDescriptionTv"
+        android:text="This is the Long Multi Line Description of Image.if description text Contains more than 3 lines then it will be trimed to three lines and three dots are Displayed in thissssssssssssssssss "
+        android:textSize="20sp"
+        />
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

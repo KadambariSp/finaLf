@@ -28,16 +28,280 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:padding="20dp"
+            android:background="#FFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/navclickteacher"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
             android:layout_centerVertical="true"
-            android:src="@drawable/aboutus"
+            android:src="@drawable/teacher1"
             />
         </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/app_name_wowTeacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/fredoka"
+                        android:text="Computer Department "
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+                    <RelativeLayout
+                        android:layout_below="@id/app_name_wowTeacher"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#FFF"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:elevation="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Now , you don't have to do any work Manually!"
+                            android:fontFamily="@font/montserratmedium"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:textStyle="italic"
+                            android:textColor="@color/black_overlay"
+                            android:textSize="11sp"
+                            />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF"
+                    android:layout_gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:background="#FFF"
+                            android:layout_width="60dp"
+                            android:elevation="10dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/notice"
+                                android:background="#FFF"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="All Notices"
+                            android:textSize="12sp"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColor="#000"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:background="#FFF"
+                            android:layout_width="60dp"
+                            android:elevation="10dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/marks"
+                                android:background="#FFF"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Marks"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColor="#000"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFF"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:background="#FFF"
+                            android:layout_width="60dp"
+                            android:elevation="10dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/detention"
+                                android:background="#FFF"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Detention List"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColor="#000"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#F6F4E7"
+                    android:layout_marginStart="20dp">
+                    <LinearLayout
+                        android:background="#C1A9E3"
+                        android:layout_width="170dp"
+                        android:id="@+id/codingRelativeLayoutTeacher"
+                        android:orientation="vertical"
+                        android:layout_height="280dp"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:layout_width="144dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="@font/fredoka"
+                            android:text="Learn forward"
+                            android:textAllCaps="true"
+                            android:textColor="#000"
+                            android:textSize="25sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:textSize="19sp"
+                            android:textStyle="italic"
+                            android:textColor="@color/darkblue"
+                            android:fontFamily="@font/montserratmedium"
+                            android:text="WHY??????"
+                            />
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/codingRecyclerViewTeacher"
+                        android:layout_toEndOf="@id/codingRelativeLayoutTeacher"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFF"
+                        />
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:padding="20dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Future of Learn Forward..."
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/deeppurple"
+                            android:fontFamily="@font/fredoka"
+                            android:textAllCaps="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="How to????"
+                            android:textColor="#FFF" />
+
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:id="@+id/mostImpRecyclerViewTeacher"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
     </LinearLayout>
+
+
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

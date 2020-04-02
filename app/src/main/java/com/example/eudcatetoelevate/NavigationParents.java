@@ -91,6 +91,10 @@ public class NavigationParents extends AppCompatActivity implements NavigationVi
                 Intent i = new Intent(NavigationParents.this, PanelSelection.class);
                 startActivity(i);
                 break;
+            case R.id.nav_explore_parents:
+                Intent ie=new Intent(NavigationParents.this,swipep.class);
+                startActivity(ie);
+                break;
 
 
         }

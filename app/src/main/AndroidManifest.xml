@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.eudcatetoelevate">
-
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ViewProfileStudentFY"></activity>
+        <activity android:name=".PostDetailActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
+        <activity android:name=".AddPostActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name=".PostListActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        </activity>
+
+        <activity android:name=".swipety" />
+        <activity android:name=".swipep" />
+        <activity android:name=".DetailActivityty" />
+        <activity android:name=".DetailAcitivtysy" />
+        <activity android:name=".DetailActivityfy" />
+        <activity android:name=".DetailAcitvityp" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".ViewProfileStudentSy" />
+        <activity android:name=".ProfileActivityStudentSy" />
+        <activity android:name=".NavigationTY" />
+        <activity android:name=".NavigationSY" />
+        <activity android:name=".ViewProfileTeachers" />
+        <activity android:name=".ProfileActivityTeachers" />
+        <activity android:name=".ViewProfileStudentFY" />
         <activity android:name=".ProfileActivityStudentFY" />
         <activity android:name=".NavigationFY" />
         <activity android:name=".NavigationParents" />

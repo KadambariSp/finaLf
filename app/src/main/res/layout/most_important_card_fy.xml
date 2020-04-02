@@ -22,11 +22,11 @@
             android:id="@+id/mImp_TitleFy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Code Code and Code"
+            android:text="Everything about Coputer Department"
             android:layout_toRightOf="@id/mImp_ImageFy"
             android:layout_marginLeft="10dp"
             android:textColor="@color/colorPrimary"
-            android:textSize="20sp"
+            android:textSize="11sp"
             android:fontFamily="@font/fredoka"/>
         <TextView
             android:id="@+id/mImp_DescFy"
@@ -36,10 +36,10 @@
             android:textColor="#fece2f"
             android:textStyle="bold"
             android:fontFamily="@font/montserratmedium"
-            android:text="Coding is Base for Computer Engineering What will you do other than that?"
+            android:text=""
             android:layout_toRightOf="@id/mImp_ImageFy"
             android:padding="10dp"
-            android:textSize="11sp"
+            android:textSize="9sp"
             />
 
     </RelativeLayout>

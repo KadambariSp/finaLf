@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_profile_teachers"
+    tools:context=".ProfileActivityTeachers">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_profile_student"
+        android:visibility="invisible"/>
+    <View
+        android:id="@+id/viewstudentprofile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="50dp"
+        android:background="@color/cardview_light_background" />
+
+    <ScrollView
+        android:id="@+id/scrolView_profile_student"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:background="#E9DDFA"
+            android:id="@+id/linear_profile_student"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:padding="5dp"
+                android:layout_marginTop="40dp"
+                app:cardElevation="10dp"
+                android:outlineSpotShadowColor="#000"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="false"
+                app:cardBackgroundColor="#E9DDFA"
+                android:foregroundGravity="center_horizontal"
+                android:layout_marginStart="130dp"
+                android:layout_height="80dp">
+                
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:background="#E9DDFA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="100dp"
+                    android:elevation="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#E9DDFA"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Profile Details"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000">
+
+                        <EditText
+                            android:id="@+id/teacher_profile_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Full Name"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:fontFamily="@font/montserratmedium"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="#000000" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email Address"
+                            android:id="@+id/teacher_profile_email"
+                            android:imeOptions="actionNext"
+                            android:fontFamily="@font/montserratmedium"
+                            android:inputType="textEmailAddress"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teacher_profile_phonenumber"
+                            android:hint="Phone Number"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000">
+
+                        <EditText
+                            android:id="@+id/teacher_profile_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="City"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:fontFamily="@font/montserratmedium"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Qualification"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000">
+
+                        <EditText
+                            android:id="@+id/teacher_profile_qualification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your Qualification"
+                            android:imeOptions="actionNext"
+                            android:fontFamily="@font/montserratmedium"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000">
+
+                        <EditText
+                            android:id="@+id/teacher_profile_collegename"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your College Name"
+                            android:imeOptions="actionNext"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000">
+
+                        <EditText
+                            android:id="@+id/teacher_profile_fields"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter the Field"
+                            android:imeOptions="actionNext"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/teacher_profile_passing_year"
+                            android:hint="Enter Passing Year"
+                            android:imeOptions="actionNext"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                            android:fontFamily="@font/montserratmedium"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <!-- <com.google.android.material.textfield.TextInputLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:textColorHint="@color/colorPrimary">
+
+                        <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="10dp"
+                             android:text="Fields of Interest"
+                             android:textStyle="bold"
+                             android:textColor="@color/colorBlue"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/student_field_of_interest"
+                            android:hint="Enter the field of interest"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorBlue"></EditText>
+
+                     </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <Button
+                        android:id="@+id/teacher_profile_resumesavebutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/buttonbg"
+                        android:text="Save"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/montserratmedium"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="6dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="#E9DDFA"
+                android:layout_alignParentStart="true"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

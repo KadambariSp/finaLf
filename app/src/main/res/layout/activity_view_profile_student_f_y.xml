@@ -29,7 +29,7 @@
 
 
             <ImageView
-                android:src="@drawable/student1"
+                android:src="@drawable/studfinal"
                 android:layout_width="140dp"
 
                 android:layout_marginTop="0dp"

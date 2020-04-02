@@ -21,18 +21,18 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterStudentSy extends AppCompatActivity {
-  /*  EditText txtUser,txtEmail,txtPassword,txtRetypePassword;
+   EditText txtUser,txtEmail,txtPassword,txtRetypePassword;
     ProgressBar progressBar;
     private Button SignUp;
     TextView signIn;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase database;
     private DatabaseReference rootRef, userRef, useridRef;
-    */@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_student_sy);
-      /*  txtUser=findViewById(R.id.etUsernameSy);
+       txtUser=findViewById(R.id.etUsernameSy);
         txtEmail=findViewById(R.id.etConfirmUsernameSy);
         signIn=findViewById(R.id.SignInSy);
         signIn.setOnClickListener(new View.OnClickListener() {
@@ -103,7 +103,7 @@ public class RegisterStudentSy extends AppCompatActivity {
                                                                           }
                                                                       }
                                                                   });
-                                                                  startActivity(new Intent(RegisterStudentSy.this,LoginStudentSy.class));
+                                                                  startActivity(new Intent(RegisterStudentSy.this,PhoneNumberCheckStudentSy.class));
 
                                                               } else {
                                                                   Toast.makeText(RegisterStudentSy.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -122,6 +122,6 @@ public class RegisterStudentSy extends AppCompatActivity {
 
 
         );
-*/
+
     }
 }

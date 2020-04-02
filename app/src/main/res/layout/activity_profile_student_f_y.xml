@@ -250,7 +250,7 @@
                     android:layout_height="150dp"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/student1"
+                    android:src="@drawable/studfinal"
                  />
 
 

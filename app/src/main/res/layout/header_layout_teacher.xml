@@ -35,7 +35,7 @@
     <ImageView
         android:layout_width="160dp"
         android:layout_height="175dp"
-        android:src="@drawable/teacher1"
+        android:src="@drawable/teacherfinal"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"/>
 

@@ -30,7 +30,7 @@ public class PhoneNumberCheckStudentSy extends AppCompatActivity {
         mobileSY=(EditText)findViewById(R.id.mobileSY);
         buttonNextSY=(Button)findViewById(R.id.buttonNextSY);
         final FirebaseDatabase database=FirebaseDatabase.getInstance();
-        final DatabaseReference table_Phone1=database.getReference("MobileNumbersSy");
+        final DatabaseReference table_Phone1=database.getReference("MobileNumbersSY");
         mobileSY.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

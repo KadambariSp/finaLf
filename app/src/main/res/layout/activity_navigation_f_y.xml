@@ -36,7 +36,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_centerVertical="true"
-                android:src="@drawable/student1"
+                android:src="@drawable/studfinal"
                 />
 
         </RelativeLayout>

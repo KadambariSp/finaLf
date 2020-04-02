@@ -82,7 +82,7 @@
                             android:layout_height="74dp"
 
                             android:padding="10dp"
-                            android:src="@drawable/student1" />
+                            android:src="@drawable/studfinal" />
 
                         <TextView
                             android:textSize="15sp"
@@ -132,7 +132,7 @@
                             android:layout_height="74dp"
 
                             android:padding="10dp"
-                            android:src="@drawable/teacher1" />
+                            android:src="@drawable/teacherfinal" />
                         <TextView
                             android:textSize="15sp"
                             android:id="@+id/teacherPanel"
@@ -189,7 +189,7 @@
                             android:layout_height="74dp"
 
                             android:padding="10dp"
-                            android:src="@drawable/parents" />
+                            android:src="@drawable/parentsfinal" />
                         <TextView
                             android:id="@+id/parentPanel"
                             android:layout_width="wrap_content"

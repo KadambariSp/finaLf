@@ -21,18 +21,18 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterStudentTy extends AppCompatActivity {
-   /* EditText txtUser,txtEmail,txtPassword,txtRetypePassword;
+    EditText txtUser,txtEmail,txtPassword,txtRetypePassword;
     ProgressBar progressBar;
     private Button SignUp;
     TextView signIn;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase database;
     private DatabaseReference rootRef, userRef, useridRef;
-    */@Override
-    protected void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected  void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_student_ty);
-      /*  txtUser=findViewById(R.id.etUsernameTy);
+       txtUser=findViewById(R.id.etUsernameTy);
         txtEmail=findViewById(R.id.etConfirmUsernameTy);
         signIn=findViewById(R.id.SignInTy);
         signIn.setOnClickListener(new View.OnClickListener() {
@@ -103,7 +103,7 @@ public class RegisterStudentTy extends AppCompatActivity {
                                                                             }
                                                                         }
                                                                     });
-                                                                    startActivity(new Intent(RegisterStudentTy.this,LoginStudentTy.class));
+                                                                    startActivity(new Intent(RegisterStudentTy.this,PhoneNumberCheckStudentTy.class));
 
                                                                 } else {
                                                                     Toast.makeText(RegisterStudentTy.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -121,6 +121,5 @@ public class RegisterStudentTy extends AppCompatActivity {
                                     }
 
 
-        );
-*/    }
+        ); }
 }
