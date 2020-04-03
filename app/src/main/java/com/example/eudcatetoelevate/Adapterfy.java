@@ -54,32 +54,27 @@ public class Adapterfy extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 if(position == 0){
-                  //  Intent intent = new Intent(contextfy,currify.class);
-                    //contextfy.startActivity(intent);
+                    Intent intent = new Intent(contextfy,viewcurrify.class);
+                    contextfy.startActivity(intent);
                 }
                 else if(position == 1){
-                    //Intent i=new Intent(contextfy,acapdf.class);
-                    //contextfy.startActivity(i);
+                    Intent i=new Intent(contextfy,acapdf.class);
+                    contextfy.startActivity(i);
                 }
-                else if (position==2){
-                    //Intent i1=new Intent(contextfy,ShowUploads.class);
-                    //contextfy.startActivity(i1);
+                else if(position==2){
+                    Intent i1=new Intent(contextfy,PostListActivityStudentAndParent.class);
+                    contextfy.startActivity(i1);
+                }
 
-                }
                 else if(position==3){
-                    //Intent iy=new Intent(contextfy,QuestionPapers.class);
-                    //contextfy.startActivity(iy);
+                    Intent iy=new Intent(contextfy,ShowTextPostActivityStudents.class);
+                    contextfy.startActivity(iy);
                 }
-                else if (position==4)
-                {
-                    //Intent i=new Intent(contextfy,ShowUploadsMarks.class);
-                    //contextfy.startActivity(i);
+                else if(position==4){
+                    Intent iy=new Intent(contextfy,coesa.class);
+                    contextfy.startActivity(iy);
                 }
-                else if (position==5)
-                {
-                   // Intent i = new Intent(contextfy,Coesa.class);
-                    //contextfy.startActivity(i);
-                }
+
             }
         });
 

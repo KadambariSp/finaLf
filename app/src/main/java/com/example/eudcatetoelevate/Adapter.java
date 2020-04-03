@@ -46,32 +46,37 @@ public class Adapter extends PagerAdapter {
         imageView = view.findViewById(R.id.image);
         title = view.findViewById(R.id.title);
         desc = view.findViewById(R.id.desc);
-        navt= view.findViewById(R.id.navt);
+
 
         imageView.setImageResource(models.get(position).getImage());
         title.setText(models.get(position).getTitle());
         desc.setText(models.get(position).getDesc());
-        navt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-            }
-        });
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              if (position==0){
-                  Intent intent = new Intent(context,PostListActivity.class);
-                  context.startActivity(intent);
-              }
-             else if (position==3){
-                 Intent intent = new Intent(context,PostListActivity.class);
-                  context.startActivity(intent);
-              }
-             else  if (position==4){
-                  Intent intent = new Intent(context,PostListActivity.class);
-                  context.startActivity(intent);
-              }
+                if (position==0){
+                    Intent intent = new Intent(context,PostListActivity.class);
+                    context.startActivity(intent);
+                }
+                else if (position==1){
+                    Intent intent = new Intent(context,acapdf.class);
+                    context.startActivity(intent);
+                }
+                else  if (position==2){
+                    Intent intent = new Intent(context,teacheruploadcurriculum.class);
+                    context.startActivity(intent);
+                }
+                else  if (position==3){
+                    Intent intent = new Intent(context,AddTextPostActivityTeachers.class);
+                    context.startActivity(intent);
+                }
+                else if(position==4){
+                    Intent intent=new Intent(context,teacheruploadcurriculum.class);
+                    context.startActivity(intent);
+                }
+
+
             }
         });
 

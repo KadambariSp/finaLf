@@ -45,33 +45,23 @@ public class Adapterp extends PagerAdapter {
         imageView4 = view.findViewById(R.id.image4);
         title4 = view.findViewById(R.id.title4);
         desc4 = view.findViewById(R.id.desc4);
-            nav=view.findViewById(R.id.nav);
 
         imageView4.setImageResource(modelp.get(position).getImage());
         title4.setText(modelp.get(position).getTitle());
         desc4.setText(modelp.get(position).getDesc());
-nav.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        //Intent i=new Intent(contextp,NavigationParent.class);
-        //contextp.startActivity(i);
-    }
-});
+
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(position == 0){
-                    //Intent intent = new Intent(contextp,ShowUploads.class);
-                    //contextp.startActivity(intent);
+                    Intent intent = new Intent(contextp,PostListActivityStudentAndParent.class);
+                    contextp.startActivity(intent);
                 }
-                else if (position==1){
-                    //Intent i=new Intent(contextp,ShowUploads.class);
-                    //contextp.startActivity(i);
+                else if(position == 1){
+                    Intent i=new Intent(contextp,acapdf.class);
+                    contextp.startActivity(i);
                 }
-                else if (position==2){
-                    //Intent i1=new Intent(contextp,ShowUploads.class);
-                 //   contextp.startActivity(i1);
-                }
+
             }
         });
 

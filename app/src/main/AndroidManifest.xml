@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.eudcatetoelevate">
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,12 +9,53 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PostDetailActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"></activity>
-        <activity android:name=".AddPostActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-        <activity android:name=".PostListActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-
-        </activity>
-
+        <activity android:name=".listcurrity"></activity>
+        <activity android:name=".liscurrisy" />
+        <activity android:name=".listcurrify" />
+        <activity android:name=".listpdf" />
+        <activity android:name=".viewpdf" />
+        <activity android:name=".viewcurrity" />
+        <activity android:name=".viewcurrisy" />
+        <activity android:name=".viewcurrify" />
+        <activity android:name=".tech" />
+        <activity android:name=".teacheruploadcurriculum" />
+        <activity android:name=".uploadPdf" />
+        <activity android:name=".uploadcurrity" />
+        <activity android:name=".uploadcurrisy" />
+        <activity android:name=".uploadcurrify" />
+        <activity android:name=".currisy" />
+        <activity android:name=".pdf" />
+        <activity android:name=".third1" />
+        <activity android:name=".sixth1" />
+        <activity android:name=".five" />
+        <activity android:name=".fourth1" />
+        <activity android:name=".sixth" />
+        <activity android:name=".fifth" />
+        <activity android:name=".fourth" />
+        <activity android:name=".third" />
+        <activity android:name=".second" />
+        <activity android:name=".first" />
+        <activity android:name=".hop" />
+        <activity android:name=".sec" />
+        <activity android:name=".pres" />
+        <activity android:name=".evemang" />
+        <activity android:name=".coesa" />
+        <activity android:name=".acapdf" />
+        <activity android:name=".academic" />
+        <activity android:name=".ShowTextPostActivityStudents" />
+        <activity android:name=".AddTextPostActivityTeachers" />
+        <activity
+            android:name=".PostListActivityStudentAndParent"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".AddPostActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".PostListActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity android:name=".swipety" />
         <activity android:name=".swipep" />
         <activity android:name=".DetailActivityty" />
@@ -71,7 +110,10 @@
             </intent-filter>
         </activity>
     </application>
-
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

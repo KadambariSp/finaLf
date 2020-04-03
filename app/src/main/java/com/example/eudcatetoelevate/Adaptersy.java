@@ -17,12 +17,10 @@ public class Adaptersy extends PagerAdapter {
     private List<Modelsy> modelsy;
     private LayoutInflater layoutInflatersy;
     private Context contextsy;
-
     public Adaptersy(List<Modelsy> modelsy, Context contextsy) {
         this.modelsy = modelsy;
         this.contextsy = contextsy;
     }
-
     @Override
     public int getCount() {
         return modelsy.size();
@@ -54,30 +52,27 @@ public class Adaptersy extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 if(position == 0){
-                   // Intent intent = new Intent(contextsy,currisy.class);
-                    //contextsy.startActivity(intent);
+                    Intent intent = new Intent(contextsy,viewcurrisy.class);
+                    contextsy.startActivity(intent);
                 }
                 else if(position == 1){
-                    //Intent i=new Intent(contextsy,acapdf.class);
-                    //contextsy.startActivity(i);
+                    Intent i=new Intent(contextsy,acapdf.class);
+                    contextsy.startActivity(i);
                 }
-                else if (position==2){
-                    //Intent i1=new Intent(contextsy,ShowUploads.class);
-                    //contextsy.startActivity(i1);
+                else if(position==2){
+                    Intent i1=new Intent(contextsy,PostListActivityStudentAndParent.class);
+                    contextsy.startActivity(i1);
                 }
-                else if (position==3){
-                    //Intent i1=new Intent(contextsy,QuestionPapers.class);
-                    //contextsy.startActivity(i1);
+
+                else if(position==3){
+                    Intent iy=new Intent(contextsy,ShowTextPostActivityStudents.class);
+                    contextsy.startActivity(iy);
                 }
-                else if (position==4){
-                    //Intent i1=new Intent(contextsy,ShowUploads.class);
-                    //contextsy.startActivity(i1);
+                else if(position==4){
+                    Intent iy=new Intent(contextsy,coesa.class);
+                    contextsy.startActivity(iy);
                 }
-                else if (position==5)
-                {
-                    //Intent i = new Intent(contextsy,Coesa.class);
-                    //contextsy.startActivity(i);
-                }
+
 
             }
         });
@@ -91,4 +86,3 @@ public class Adaptersy extends PagerAdapter {
         container.removeView((View)object);
     }
 }
-

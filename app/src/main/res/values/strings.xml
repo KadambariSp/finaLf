@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">EDUCATE TO ELEVATE</string>
-    <string name="pressite">https://forms.gle/dtEr445P8vLhwh1QA</string>
+
+    <string name="evesite"><a href="https://forms.gle/EBu4kpiPC3rGLwny9">TO fill form for the position of event manager click here</a></string>
+    <string name="pressite"><a href="https://forms.gle/dtEr445P8vLhwh1QA">TO fill form for the position of president click here</a></string>
+    <string name="secsite"><a href="https://forms.gle/Q7mBpddzsrFEn1e66">TO fill form for the position of president click here</a></string>
+    <string name="hopsite"><a href="https://forms.gle/5rkz43kM4z9ayRAn6">TO fill form for the position of president click here</a></string>
+    <string name="techsite"><a href="https://forms.gle/Z1uLuhuSsoDzfBMC6">TO fill form for the position of president click here</a></string>
 </resources>

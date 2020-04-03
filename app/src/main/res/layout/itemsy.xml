@@ -10,7 +10,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
         android:layout_margin="8dp">
 
         <RelativeLayout
@@ -24,6 +25,8 @@
                 android:layout_height="200dp" />
 
             <TextView
+                android:textStyle="bold"
+                android:fontFamily="@font/montserratmedium"
                 android:id="@+id/title2"
                 android:textColor="#262626"
                 android:layout_below="@id/image2"
@@ -44,6 +47,8 @@
                 android:drawablePadding="10dp"
                 android:ellipsize="end"
                 android:text="Description"
+                android:textStyle="italic"
+                android:fontFamily="@font/montserratregular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 

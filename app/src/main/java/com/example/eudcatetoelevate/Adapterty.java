@@ -54,29 +54,28 @@ public class Adapterty extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 if(position == 0){
-                   // Intent intent = new Intent(contextty,pdf.class);
-                    //contextty.startActivity(intent);
+                    Intent intent = new Intent(contextty,viewcurrity.class);
+                    contextty.startActivity(intent);
                 }
                 else if(position == 1){
-                    //Intent i=new Intent(contextty,acapdf.class);
-                    //contextty.startActivity(i);
+                    Intent i=new Intent(contextty,acapdf.class);
+                    contextty.startActivity(i);
                 }
-                else if (position==2){
-                    //Intent i1=new Intent(contextty,ShowUploads.class);
-                    //contextty.startActivity(i1);
+                else if(position==2){
+                    Intent i1=new Intent(contextty,PostListActivityStudentAndParent.class);
+                    contextty.startActivity(i1);
                 }
-                else if (position==3){
-                    //Intent i1=new Intent(contextty,QuestionPapers.class);
-                    //contextty.startActivity(i1);
+
+                else if(position==3){
+                    Intent iy=new Intent(contextty,ShowTextPostActivityStudents.class);
+                    contextty.startActivity(iy);
                 }
-                else if (position==4){
-                    //Intent i1=new Intent(contextty,ShowUploads.class);
-                    //contextty.startActivity(i1);
+                else if(position==4){
+                    Intent iy=new Intent(contextty,coesa.class);
+                    contextty.startActivity(iy);
                 }
-                else if (position==5){
-                   // Intent i= new Intent(contextty,Coesa.class);
-                    //contextty.startActivity(i);
-                }
+
+
             }
         });
 
