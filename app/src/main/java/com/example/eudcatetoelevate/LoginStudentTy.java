@@ -52,7 +52,7 @@ public class LoginStudentTy extends AppCompatActivity {
                 useridRef = userRef.child(userid);
                 final ProgressDialog pd = new ProgressDialog(LoginStudentTy.this);
                 pd.setTitle("Logging Student");
-                pd.setMessage("Please wait logging in");
+                pd.setMessage("Wait for Sometime...");
                 pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 pd.show();
 
@@ -152,8 +152,6 @@ public class LoginStudentTy extends AppCompatActivity {
                                         });
                                     }else{
                                         Toast.makeText(LoginStudentTy.this,"Please verify your email address",Toast.LENGTH_SHORT).show();
-
-
                                     }
                                 } else {
                                     Toast.makeText(LoginStudentTy.this, task.getException().getMessage(),Toast.LENGTH_LONG).show();

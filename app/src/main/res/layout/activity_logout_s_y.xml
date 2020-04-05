@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:padding="20dp"
     android:background="#FFF"
-    tools:context=".LogoutFy">
-
+    tools:context=".LogoutSY">
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_marginTop="20dp"
         android:layout_width="300dp"
@@ -37,7 +36,7 @@
         android:layout_below="@id/img"
         />
     <Button
-        android:id="@+id/logout_Fy"
+        android:id="@+id/logout_Sy"
         android:background="@drawable/buttonbg"
         android:text="Log out"
         android:fontFamily="@font/montserratmedium"

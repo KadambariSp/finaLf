@@ -148,6 +148,9 @@ NavigationTeachers extends AppCompatActivity implements NavigationView.OnNavigat
                 Intent i3 = new Intent(NavigationTeachers.this, ProfileActivityTeachers.class);
                 startActivity(i3);
                 break;
+            case R.id.nav_logout_teacher:
+                Intent logout_t=new Intent(NavigationTeachers.this,LogoutTeacher.class);
+                startActivity(logout_t);
 
         }
         drawerLayout.closeDrawer(GravityCompat.START);

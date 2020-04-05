@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="290dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/mImp_ImageTy"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/project"
+            />
+        <TextView
+            android:id="@+id/mImp_TitleTy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selection of Topics and Group Members"
+            android:layout_toRightOf="@id/mImp_ImageTy"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp"
+            android:fontFamily="@font/fredoka"/>
+        <TextView
+            android:id="@+id/mImp_DescTy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mImp_TitleTy"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Very first Step towards your final year project is this one!!!"
+            android:layout_toRightOf="@id/mImp_ImageTy"
+            android:padding="10dp"
+            android:textSize="9sp"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -146,6 +146,10 @@ public class NavigationSY extends AppCompatActivity implements NavigationView.On
                 Intent i4 = new Intent(NavigationSY.this,swipesy.class);
                 startActivity(i4);
                 break;
+            case R.id.nav_logout_sy:
+                Intent logout=new Intent(NavigationSY.this,LogoutSY.class);
+                startActivity(logout);
+
 
 
         }

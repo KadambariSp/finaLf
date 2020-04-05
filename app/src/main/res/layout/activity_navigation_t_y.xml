@@ -1,9 +1,291 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawer_ty"
     tools:context=".NavigationTY">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/nav_view_ty"
+        android:background="#FFF"
+        android:theme="@style/navigationTheme"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_layout_ty"
+        app:menu="@menu/menuty"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.navigation.NavigationView>
+    <LinearLayout
+        android:id="@+id/contentty"
+        android:orientation="vertical"
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/navclickty"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/studfinal"
+                app:civ_border_width="4dp" />
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/app_name_wow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/fredoka"
+                        android:text="THIRD YEAR"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="28sp" />
+                    <RelativeLayout
+                        android:layout_below="@id/app_name_wow"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="#FFF"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:elevation="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="In Final Year of Diploma You must Invest Your hardwork to gain knowledge and Marks as well! "
+                            android:fontFamily="@font/montserratmedium"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:textStyle="italic"
+                            android:textColor="@color/black_overlay"
+                            android:textSize="11sp"
+                            />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:background="#FFF"
+                            android:layout_width="60dp"
+                            android:elevation="10dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/androidstudioty"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Android "
+                            android:textSize="12sp"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColor="#000"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:background="#FFF"
+                            android:layout_width="60dp"
+                            android:elevation="10dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/pythonty"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Python"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColor="#000"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:background="#FFF"
+                            android:layout_width="60dp"
+                            android:elevation="10dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="10dp">
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/softwaretestingty"
+                                android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Testing"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:fontFamily="@font/montserratmedium"
+                            android:textColor="#000"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#E6CBED"
+                    android:layout_marginLeft="20dp">
+                    <LinearLayout
+                        android:background="#F16D6A"
+                        android:layout_width="170dp"
+                        android:id="@+id/codingRelativeLayoutSY"
+                        android:orientation="vertical"
+                        android:layout_height="280dp"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Swipe Next Swipe..."
+                            android:textSize="25sp"
+                            android:textColor="#000"
+                            android:layout_marginTop="50dp"
+                            android:textAllCaps="true"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/fredoka"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:textSize="19sp"
+                            android:textColor="@color/darkblue"
+                            android:fontFamily="@font/montserratmedium"
+                            android:text="(All Information about your Academic subjects....)"
+                            />
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/codingRecyclerViewTY"
+                        android:layout_toRightOf="@id/codingRelativeLayoutSY"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFF"
+                        />
+
+
+
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:padding="20dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Final Year Project"
+                            android:textSize="13sp"
+                            android:textColor="#000"
+                            android:fontFamily="@font/fredoka"
+                            android:textAllCaps="true"/>
+
+
+
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:id="@+id/mostImpRecyclerViewTy"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

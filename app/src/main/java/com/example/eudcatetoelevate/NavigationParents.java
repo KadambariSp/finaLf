@@ -95,6 +95,9 @@ public class NavigationParents extends AppCompatActivity implements NavigationVi
                 Intent ie=new Intent(NavigationParents.this,swipep.class);
                 startActivity(ie);
                 break;
+            case R.id.nav_logout_parents:
+                Intent ii=new Intent(NavigationParents.this,LogoutParents.class);
+                startActivity(ii);
 
 
         }
