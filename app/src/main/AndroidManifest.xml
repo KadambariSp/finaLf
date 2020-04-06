@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LogoutParents"></activity>
+        <activity android:name=".LogoutTy"></activity>
+        <activity android:name=".ViewProfileStudentTy" />
+        <activity android:name=".ProfileActivityStudentTy" />
+        <activity android:name=".LogoutParents" />
         <activity android:name=".LogoutTeacher" />
         <activity android:name=".LogoutSY" />
         <activity android:name=".LogoutFy" />
@@ -114,10 +117,10 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>

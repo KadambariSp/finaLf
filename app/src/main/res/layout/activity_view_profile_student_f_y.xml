@@ -15,7 +15,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/student_home_profile_msg"
+                android:id="@+id/student_home_profile_msg_student_fy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
@@ -24,7 +24,7 @@
                 android:fontFamily="@font/fredoka"
                 android:textColor="#000"
                 android:textStyle="bold"
-                android:text="Dear Student , Please Submit Your Profile "
+                android:text="Dear Student , Please Submit Your Profile First"
                 android:textSize="24sp"/>
 
 
@@ -40,8 +40,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="PERSONAL DETAILS"
-                android:id="@+id/student_home_profile_personal"
+                android:text="Profile Details"
+                android:id="@+id/student_home_profile_personal_student_fy"
                 android:visibility="gone"
                 android:textSize="25sp"
                 android:fontFamily="@font/fredoka"
@@ -64,7 +64,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:editable="false"
-                android:id="@+id/student_home_info_name"/>
+                android:id="@+id/student_home_info_name_student_fy"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                 android:editable="false"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
-                android:id="@+id/student_home_info_email"/>
+                android:id="@+id/student_home_info_email_student_fy"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -96,11 +96,11 @@
                 android:textColor="@color/colorPrimary"
                 android:layout_marginLeft="20dp"
                 android:editable="false"
-                android:id="@+id/student_home_info_phoneno"/>
+                android:id="@+id/student_home_info_phoneno_student_fy"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="CITY"
+                android:hint="Academic Year "
                 android:textSize="20dp"
                 android:visibility="gone"
                 android:layout_gravity="center_horizontal"
@@ -112,13 +112,13 @@
                 android:fontFamily="@font/montserratmedium"
                 android:textColor="@color/colorPrimary"
                 android:editable="false"
-                android:id="@+id/student_home_info_city"/>
+                android:id="@+id/student_home_info_year_student"/>
             <TextView
                 android:layout_width="match_parent"
                 android:visibility="gone"
                 android:layout_height="wrap_content"
-                android:hint="QUALIFICATION DETAILS"
-                android:id="@+id/student_home_profile_qualification"
+                android:hint="Other Details"
+                android:id="@+id/student_home_profile_qualification_student_fy"
                 android:textSize="25sp"
 
                 android:layout_marginTop="40dp"
@@ -129,7 +129,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="QUALIFICATION"
+                android:hint="Term"
                 android:textSize="20dp"
                 android:visibility="gone"
                 android:layout_gravity="center_horizontal"
@@ -141,11 +141,11 @@
                 android:fontFamily="@font/montserratmedium"
                 android:textColor="@color/colorPrimary"
                 android:editable="false"
-                android:id="@+id/student_home_info_qualification"/>
+                android:id="@+id/student_home_info_term_student_fy"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="COLLEGE NAME"
+                android:hint="Shift"
                 android:background="@drawable/etbg"
                 android:textSize="20dp"
                 android:visibility="gone"
@@ -157,12 +157,12 @@
                 android:layout_gravity="center_horizontal"
 
                 android:layout_marginRight="20dp"
-                android:id="@+id/student_home_info_clgname"/>
+                android:id="@+id/student_home_info_shift_student_fy"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
-                android:hint="PASSING YEAR"
+                android:hint="Batch"
                 android:background="@drawable/etbg"
                 android:textSize="20dp"
                 android:layout_marginTop="20dp"
@@ -173,11 +173,11 @@
                 android:layout_gravity="center_horizontal"
 
                 android:layout_marginRight="20dp"
-                android:id="@+id/student_home_info_passingyear"/>
+                android:id="@+id/student_home_info_batch_student_fy"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="FIELD OF INTEREST"
+                android:hint="Enrollment Number"
                 android:layout_marginTop="20dp"
                 android:textSize="20dp"
                 android:layout_marginBottom="30dp"
@@ -190,7 +190,7 @@
                 android:background="@drawable/etbg"
                 android:fontFamily="@font/montserratmedium"
                 android:textColor="@color/colorPrimary"
-                android:id="@+id/student_home_info_INTEREST"/>
+                android:id="@+id/student_home_info_enroll_fy"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

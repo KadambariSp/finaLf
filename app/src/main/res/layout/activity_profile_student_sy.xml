@@ -2,49 +2,58 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_profile_student"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#FFF"
+    android:id="@+id/activity_profile_student_sy"
     tools:context=".ProfileActivityStudentSy">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/text_profile_student"
         android:visibility="invisible"/>
-    <View
-        android:id="@+id/viewstudentprofile"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="50dp"
-        android:background="@color/cardview_light_background" />
 
     <ScrollView
-        android:id="@+id/scrolView_profile_student"
+        android:id="@+id/scrollView_profile_student_sy"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
         <RelativeLayout
+            android:background="#FFF"
             android:id="@+id/linear_profile_student"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/studfinal"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="#000"
+                app:civ_border_width="2dp"
+                android:elevation="10dp"
+                />
+
+
             <LinearLayout
+                android:background="#fff"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="100dp"
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:padding="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="100dp"
+                    android:elevation="10dp"
                     android:layout_marginRight="10dp"
+                    android:background="#FFF"
                     android:orientation="vertical">
 
                     <TextView
@@ -66,6 +75,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Full Name"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:fontFamily="@font/montserratmedium"
                             android:imeOptions="actionNext"
                             android:textColorHint="#000000" />
@@ -85,6 +95,8 @@
                             android:imeOptions="actionNext"
                             android:fontFamily="@font/montserratmedium"
                             android:inputType="textEmailAddress"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                             />
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -102,6 +114,8 @@
                             android:hint="Phone Number"
                             android:imeOptions="actionNext"
                             android:inputType="text"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                             android:fontFamily="@font/montserratmedium"
                             android:textColorHint="@color/colorPrimary" />
 
@@ -112,13 +126,15 @@
                         android:textColorHint="#000000">
 
                         <EditText
-                            android:id="@+id/student_profile_city_sy"
+                            android:id="@+id/student_profile_year_sy"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="City"
+                            android:hint="Year"
                             android:imeOptions="actionNext"
                             android:inputType="text"
                             android:fontFamily="@font/montserratmedium"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                             android:textColorHint="@color/colorPrimary" />
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -127,7 +143,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Qualification"
+                        android:text="Other Details"
                         android:fontFamily="@font/montserratmedium"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimary"/>
@@ -138,11 +154,31 @@
                         android:textColorHint="#000000">
 
                         <EditText
-                            android:id="@+id/student_profile_qualification_sy"
+                            android:id="@+id/student_profile_term_sy"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Enter your Qualification"
+                            android:hint="Enter your Term"
                             android:imeOptions="actionNext"
+                            android:fontFamily="@font/montserratmedium"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                            android:textColorHint="@color/colorPrimary" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#000000">
+
+                        <EditText
+                            android:id="@+id/student_profile_shift_sy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your Shift"
+                            android:imeOptions="actionNext"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                             android:fontFamily="@font/montserratmedium"
                             android:textColorHint="@color/colorPrimary" />
 
@@ -154,27 +190,13 @@
                         android:textColorHint="#000000">
 
                         <EditText
-                            android:id="@+id/student_profile_collegename_sy"
+                            android:id="@+id/student_profile_batch_sy"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Enter your College Name"
+                            android:hint="Enter Batch Name"
                             android:imeOptions="actionNext"
-                            android:fontFamily="@font/montserratmedium"
-                            android:textColorHint="@color/colorPrimary" />
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColorHint="#000000">
-
-                        <EditText
-                            android:id="@+id/student_profile_fields_sy"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Enter the Field"
-                            android:imeOptions="actionNext"
                             android:fontFamily="@font/montserratmedium"
                             android:textColorHint="@color/colorPrimary" />
 
@@ -188,17 +210,42 @@
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/student_profile_passing_year_sy"
-                            android:hint="Enter Passing Year"
+                            android:id="@+id/student_profile_enroll_sy"
+                            android:hint="Enter Enrollment Number"
                             android:imeOptions="actionNext"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
                             android:fontFamily="@font/montserratmedium"
                             />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
 
-              <Button
-                        android:id="@+id/student_profile_resumesavebutton_sy"
+                    <!-- <com.google.android.material.textfield.TextInputLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:textColorHint="@color/colorPrimary">
+
+                        <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="10dp"
+                             android:text="Fields of Interest"
+                             android:textStyle="bold"
+                             android:textColor="@color/colorBlue"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/student_field_of_interest"
+                            android:hint="Enter the field of interest"
+                            android:imeOptions="actionNext"
+                            android:textColorHint="@color/colorBlue"></EditText>
+
+                     </com.google.android.material.textfield.TextInputLayout>-->
+
+                    <Button
+                        android:id="@+id/student_profile_save_sy"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -218,30 +265,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true">
-
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/student_profile_imageView"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginTop="20dp"
-                    app:civ_border_width="4dp"
-                    app:civ_border_color="#000"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:src="@drawable/studfinal"
-                    />
-
-
-
-
-
-
-            </RelativeLayout>
+                android:background="#E9DDFA"
+                android:layout_alignParentStart="true"/>
 
 
         </RelativeLayout>
     </ScrollView>
+
+
 
 </RelativeLayout>

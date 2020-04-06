@@ -135,20 +135,22 @@ public class NavigationTY extends AppCompatActivity implements NavigationView.On
                 Intent i = new Intent(NavigationTY.this, PanelSelection.class);
                 startActivity(i);
                 break;
-            // case R.id.nav_profile_ty:
-            //   Intent i2 = new Intent(NavigationTY.this, ProfileActivityStudentFY.class);
-            // startActivity(i2);
-            //break;
-           /* case R.id.nav_account_ty:
-                Intent i3 = new Intent(NavigationTY.this, ViewProfileStudentFY.class);
-                startActivity(i3);*/
             case R.id.nav_explore_fy:
                 Intent ie = new Intent(NavigationTY.this, swipety.class);
                 startActivity(ie);
                 break;
-           /* case R.id.nav_logout_ty:
-                Intent ii=new Intent(NavigationTY.this,LogoutFy.class);
-                startActivity(ii);*/
+            case R.id.nav_account_ty:
+                Intent i3 = new Intent(NavigationTY.this, ViewProfileStudentTy.class);
+                startActivity(i3);
+                break;
+            case R.id.nav_logout_ty:
+                Intent ii = new Intent(NavigationTY.this, LogoutTy.class);
+                startActivity(ii);
+            case R.id.nav_profile_ty:
+                Intent i2 = new Intent(NavigationTY.this, ProfileActivityStudentTy.class);
+                startActivity(i2);
+                break;
+
 
         }
         drawerLayoutTY.closeDrawer(GravityCompat.START);

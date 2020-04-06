@@ -49,11 +49,6 @@ public class ProfileActivityTeachers extends AppCompatActivity {
         student_profile_collegename = findViewById(R.id.teacher_profile_collegename);
         student_profile_passing_year = findViewById(R.id.teacher_profile_passing_year);
         student_profile_fields = findViewById(R.id.teacher_profile_fields);
-        //  mProgressBar = findViewById(R.id.progress_bar);
-
-        //  profileImage=findViewById(R.id.student_profile_imageView);
-
-        // saveProfile = (Button)root.findViewById(R.id.student_profile_resumesavebutton);
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
         firebaseStorage = FirebaseStorage.getInstance();

@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF"
-    android:id="@+id/activity_profile_teachers"
-    tools:context=".ProfileActivityTeachers">
+    android:id="@+id/activity_profile_student_ty"
+    tools:context=".ProfileActivityStudentTy">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:visibility="invisible"/>
 
     <ScrollView
-        android:id="@+id/scrollView_profile_student"
+        android:id="@+id/scrollView_profile_student_ty"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -26,16 +26,16 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/teacherfinal"
-                    android:layout_marginTop="20dp"
-                    app:civ_border_color="#000"
-                    app:civ_border_width="4dp"
-                    android:elevation="10dp"
-                    />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/studfinal"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="#000"
+                app:civ_border_width="2dp"
+                android:elevation="10dp"
+                />
 
 
             <LinearLayout
@@ -71,7 +71,7 @@
                         android:textColorHint="#000000">
 
                         <EditText
-                            android:id="@+id/teacher_profile_username"
+                            android:id="@+id/student_profile_username_ty"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Full Name"
@@ -91,7 +91,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Email Address"
-                            android:id="@+id/teacher_profile_email"
+                            android:id="@+id/student_profile_email_ty"
                             android:imeOptions="actionNext"
                             android:fontFamily="@font/montserratmedium"
                             android:inputType="textEmailAddress"
@@ -110,7 +110,7 @@
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/teacher_profile_phonenumber"
+                            android:id="@+id/student_profile_phonenumber_ty"
                             android:hint="Phone Number"
                             android:imeOptions="actionNext"
                             android:inputType="text"
@@ -126,10 +126,10 @@
                         android:textColorHint="#000000">
 
                         <EditText
-                            android:id="@+id/teacher_profile_city"
+                            android:id="@+id/student_profile_year_ty"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="City"
+                            android:hint="Year"
                             android:imeOptions="actionNext"
                             android:inputType="text"
                             android:fontFamily="@font/montserratmedium"
@@ -143,7 +143,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Qualification"
+                        android:text="Other Details"
                         android:fontFamily="@font/montserratmedium"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimary"/>
@@ -154,10 +154,10 @@
                         android:textColorHint="#000000">
 
                         <EditText
-                            android:id="@+id/teacher_profile_qualification"
+                            android:id="@+id/student_profile_term_ty"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Enter your Qualification"
+                            android:hint="Enter your Term"
                             android:imeOptions="actionNext"
                             android:fontFamily="@font/montserratmedium"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -172,10 +172,10 @@
                         android:textColorHint="#000000">
 
                         <EditText
-                            android:id="@+id/teacher_profile_collegename"
+                            android:id="@+id/student_profile_shift_ty"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Enter your College Name"
+                            android:hint="Enter your Shift"
                             android:imeOptions="actionNext"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
@@ -190,10 +190,10 @@
                         android:textColorHint="#000000">
 
                         <EditText
-                            android:id="@+id/teacher_profile_fields"
+                            android:id="@+id/student_profile_batch_ty"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Enter the Field"
+                            android:hint="Enter Batch Name"
                             android:imeOptions="actionNext"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
@@ -210,8 +210,8 @@
                         <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/teacher_profile_passing_year"
-                            android:hint="Enter Passing Year"
+                            android:id="@+id/student_profile_enroll_ty"
+                            android:hint="Enter Enrollment Number"
                             android:imeOptions="actionNext"
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
@@ -245,7 +245,7 @@
                      </com.google.android.material.textfield.TextInputLayout>-->
 
                     <Button
-                        android:id="@+id/teacher_profile_resumesavebutton"
+                        android:id="@+id/student_profile_save_ty"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

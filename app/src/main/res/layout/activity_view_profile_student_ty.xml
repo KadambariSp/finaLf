@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context=".ViewProfileStudentTy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/student_home_info_name_student_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/etbg"
+                android:editable="false"
+                android:fontFamily="@font/montserratmedium"
+
+                android:hint="Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/student_home_info_email_student_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginRight="20dp"
+                android:background="@drawable/etbg"
+                android:editable="false"
+                android:fontFamily="@font/montserratmedium"
+                android:hint="EMAIL ID"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/student_home_info_phoneno_student_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+
+                android:background="@drawable/etbg"
+                android:editable="false"
+                android:fontFamily="@font/montserratmedium"
+                android:hint="PHONE NO"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/student_home_info_year_student_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginRight="20dp"
+                android:background="@drawable/etbg"
+                android:editable="false"
+                android:fontFamily="@font/montserratmedium"
+                android:hint="Academic Year "
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/student_home_info_term_student_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginRight="20dp"
+                android:background="@drawable/etbg"
+                android:editable="false"
+                android:fontFamily="@font/montserratmedium"
+                android:hint="Term"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/student_home_info_shift_student_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/etbg"
+                android:editable="false"
+                android:fontFamily="@font/montserratmedium"
+                android:hint="Shift"
+                android:textColor="@color/colorPrimary"
+
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/student_home_info_batch_student_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/etbg"
+                android:editable="false"
+                android:fontFamily="@font/montserratmedium"
+                android:hint="Batch"
+                android:textColor="@color/colorPrimary"
+
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/student_home_info_enroll_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/etbg"
+                android:editable="false"
+
+                android:fontFamily="@font/montserratmedium"
+                android:hint="Enrollment Number"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/student_home_profile_image"
+                android:layout_width="140dp"
+
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="0dp"
+                android:src="@drawable/studfinal" />
+
+            <TextView
+                android:id="@+id/student_home_profile_msg_student_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/fredoka"
+                android:text="Dear Student , Please Submit Your Profile First"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/student_home_profile_personal_student_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:editable="false"
+                android:fontFamily="@font/fredoka"
+                android:text="Profile Details"
+                android:textSize="25sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/student_home_profile_qualification_student_ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="40dp"
+                android:editable="false"
+
+                android:fontFamily="@font/fredoka"
+                android:hint="Other Details"
+                android:textSize="25sp"
+
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+

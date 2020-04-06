@@ -1,18 +1,17 @@
 package com.example.eudcatetoelevate.Model;
 
 public class StoreStudentProfileFY {
-    String name,email,phone,city,qualification,collegeName,passingYear;
-    String fields;
-
-    public StoreStudentProfileFY(String name, String email, String phone, String city, String qualification, String collegeName, String passingYear, String fields) {
+    String name,email,phone,year,term,shift,batch;
+    String enroll;
+    public StoreStudentProfileFY(String name, String email, String phone, String year, String term, String shift, String batch, String enroll) {
         this.name = name;
         this.email = email;
         this.phone = phone;
-        this.city = city;
-        this.qualification = qualification;
-        this.collegeName = collegeName;
-        this.passingYear = passingYear;
-        this.fields = fields;
+        this.year = year;
+        this.term = term;
+        this.shift = shift;
+        this.batch = batch;
+        this.enroll = enroll;
     }
 
     public String getName() {
@@ -39,43 +38,43 @@ public class StoreStudentProfileFY {
         this.phone = phone;
     }
 
-    public String getCity() {
-        return city;
+    public String getYear() {
+        return year;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setYear(String year) {
+        this.year = year;
     }
 
-    public String getQualification() {
-        return qualification;
+    public String getTerm() {
+        return term;
     }
 
-    public void setQualification(String qualification) {
-        this.qualification = qualification;
+    public void setTerm(String term) {
+        this.term = term;
     }
 
-    public String getCollegeName() {
-        return collegeName;
+    public String getShift() {
+        return shift;
     }
 
-    public void setCollegeName(String collegeName) {
-        this.collegeName = collegeName;
+    public void setShift(String shift) {
+        this.shift = shift;
     }
 
-    public String getPassingYear() {
-        return passingYear;
+    public String getBatch() {
+        return batch;
     }
 
-    public void setPassingYear(String passingYear) {
-        this.passingYear = passingYear;
+    public void setBatch(String batch) {
+        this.batch = batch;
     }
 
-    public String getFields() {
-        return fields;
+    public String getEnroll() {
+        return enroll;
     }
 
-    public void setFields(String fields) {
-        this.fields = fields;
+    public void setEnroll(String enroll) {
+        this.enroll = enroll;
     }
 }

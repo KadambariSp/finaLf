@@ -3,19 +3,16 @@ package com.example.eudcatetoelevate;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.eudcatetoelevate.Model.StoreStudentProfileFY;
-import com.example.eudcatetoelevate.Model.StoreTeacherProfile;
+import com.example.eudcatetoelevate.Model.StoreStudentProfileTY;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -27,10 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-import java.util.Objects;
-import java.util.prefs.BackingStoreException;
-
-public class ProfileActivityStudentFY extends AppCompatActivity {
+public class ProfileActivityStudentTy extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
     private FirebaseStorage firebaseStorage;
     private StorageReference useridReference, mStorageRef;
@@ -44,21 +38,21 @@ public class ProfileActivityStudentFY extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile_student_f_y);
+        setContentView(R.layout.activity_profile_student_ty);
         final TextView textView = findViewById(R.id.text_profile_student);
-        student_profile_username=findViewById(R.id.student_profile_username_fy);
-        student_profile_email=findViewById(R.id.student_profile_email_fy);
-        student_profile_phonenumber=findViewById(R.id.student_profile_phonenumber_fy);
-        student_profile_year=findViewById(R.id.student_profile_year_fy);
-        student_profile_term=findViewById(R.id.student_profile_term_fy);
-        student_profile_shift=findViewById(R.id.student_profile_shift_fy);
-        student_profile_batch=findViewById(R.id.student_profile_batch_fy);
-        student_profile_enroll=findViewById(R.id.student_profile_enroll_fy);
+        student_profile_username=findViewById(R.id.student_profile_username_ty);
+        student_profile_email=findViewById(R.id.student_profile_email_ty);
+        student_profile_phonenumber=findViewById(R.id.student_profile_phonenumber_ty);
+        student_profile_year=findViewById(R.id.student_profile_year_ty);
+        student_profile_term=findViewById(R.id.student_profile_term_ty);
+        student_profile_shift=findViewById(R.id.student_profile_shift_ty);
+        student_profile_batch=findViewById(R.id.student_profile_batch_ty);
+        student_profile_enroll=findViewById(R.id.student_profile_enroll_ty);
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
         firebaseStorage = FirebaseStorage.getInstance();
         final StorageReference storageReference = firebaseStorage.getReference();
-        StorageReference userReference = storageReference.child("FYProfiles/");
+        StorageReference userReference = storageReference.child("TYProfiles/");
         String userid = firebaseAuth.getCurrentUser().getUid().toString();
         useridReference = userReference.child(userid + "/");
         StorageReference ProfileRef = useridReference.child("profile/");
@@ -71,11 +65,11 @@ public class ProfileActivityStudentFY extends AppCompatActivity {
 
         firebaseDatabase = FirebaseDatabase.getInstance();
         rootRef = firebaseDatabase.getReference();
-        userRef = rootRef.child("FYProfiles");
+        userRef = rootRef.child("TYProfiles");
         String userId = firebaseAuth.getCurrentUser().getUid().toString();
         userIdRef = userRef.child(userId);
         profileRef = userIdRef.child("profile");
-        student_profile_save_button = findViewById(R.id.student_profile_save_fy);
+        student_profile_save_button = findViewById(R.id.student_profile_save_ty);
 
 
 
@@ -126,36 +120,36 @@ public class ProfileActivityStudentFY extends AppCompatActivity {
 
 
                 if (TextUtils.isEmpty(name)) {
-                    Toast.makeText(ProfileActivityStudentFY.this, "Please enter Full name", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter Full name", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(email)) {
 
-                    Toast.makeText(ProfileActivityStudentFY.this, "Please enter email", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter email", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(phone)) {
-                    Toast.makeText(ProfileActivityStudentFY.this, "Please enter phone number", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter phone number", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(year)) {
-                    Toast.makeText(ProfileActivityStudentFY.this, "Please enter company name", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter company name", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(term)) {
-                    Toast.makeText(ProfileActivityStudentFY.this, "Please enter company location", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter company location", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(shift)) {
-                    Toast.makeText(ProfileActivityStudentFY.this, "Please enter company location", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter company location", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(batch)) {
-                    Toast.makeText(ProfileActivityStudentFY.this, "Please enter company location", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter company location", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(enroll)) {
-                    Toast.makeText(ProfileActivityStudentFY.this, "Please enter fields of Interest", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter fields of Interest", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 student_profile_save_button.setOnClickListener(new View.OnClickListener() {
@@ -166,11 +160,11 @@ public class ProfileActivityStudentFY extends AppCompatActivity {
                 });
 
 
-                StoreStudentProfileFY storeStudentProfileFY = new StoreStudentProfileFY(name,email,phone,year,term,shift,batch,enroll);
-                profileRef.setValue(storeStudentProfileFY).addOnSuccessListener(new OnSuccessListener<Void>() {
+                StoreStudentProfileTY storeStudentProfileTY = new StoreStudentProfileTY(name,email,phone,year,term,shift,batch,enroll);
+                profileRef.setValue(storeStudentProfileTY).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(ProfileActivityStudentFY.this, "Profile Saved Successfully", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ProfileActivityStudentTy.this, "Profile Saved Successfully", Toast.LENGTH_SHORT).show();
                     }
                 });
 
@@ -184,16 +178,4 @@ public class ProfileActivityStudentFY extends AppCompatActivity {
 
 
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-

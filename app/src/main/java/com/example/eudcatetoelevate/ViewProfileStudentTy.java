@@ -3,7 +3,6 @@ package com.example.eudcatetoelevate;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.drawable.ShapeDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -11,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.eudcatetoelevate.Model.HomeViewModelStudent;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -19,7 +17,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class ViewProfileStudentFY extends AppCompatActivity {
+public class ViewProfileStudentTy extends AppCompatActivity {
     EditText name,emailid,phoneno,year,term,shift,batch,enroll;
     TextView profilemessage,personal,quadet;
     ImageView profileImage;
@@ -28,22 +26,21 @@ public class ViewProfileStudentFY extends AppCompatActivity {
     FirebaseDatabase firebaseDatabase;
     DatabaseReference rootRef,userRef,userIdRef,profileRef;
     String userid;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_profile_student_f_y);
-        profilemessage = findViewById(R.id.student_home_profile_msg_student_fy);
-        name=findViewById(R.id.student_home_info_name_student_fy);
-        emailid=findViewById(R.id.student_home_info_email_student_fy);
-        phoneno=findViewById(R.id.student_home_info_phoneno_student_fy);
-        year =findViewById(R.id.student_home_info_year_student);
-        term=findViewById(R.id.student_home_info_term_student_fy);
-        shift=findViewById(R.id.student_home_info_shift_student_fy);
-        batch=findViewById(R.id.student_home_info_batch_student_fy);
-       enroll=findViewById(R.id.student_home_info_enroll_fy);
-        personal =findViewById(R.id.student_home_profile_personal_student_fy);
-        quadet = findViewById(R.id.student_home_profile_qualification_student_fy);
+        setContentView(R.layout.activity_view_profile_student_ty);
+        profilemessage = findViewById(R.id.student_home_profile_msg_student_ty);
+        name=findViewById(R.id.student_home_info_name_student_ty);
+        emailid=findViewById(R.id.student_home_info_email_student_ty);
+        phoneno=findViewById(R.id.student_home_info_phoneno_student_ty);
+        year =findViewById(R.id.student_home_info_year_student_ty);
+        term=findViewById(R.id.student_home_info_term_student_ty);
+        shift=findViewById(R.id.student_home_info_shift_student_ty);
+        batch=findViewById(R.id.student_home_info_batch_student_ty);
+        enroll=findViewById(R.id.student_home_info_enroll_ty);
+        personal =findViewById(R.id.student_home_profile_personal_student_ty);
+        quadet = findViewById(R.id.student_home_profile_qualification_student_ty);
 
         //ImageView
         profileImage =findViewById(R.id.student_home_profile_image);
@@ -52,7 +49,7 @@ public class ViewProfileStudentFY extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         rootRef = firebaseDatabase.getReference();
-        userRef = rootRef.child("FYProfiles");
+        userRef = rootRef.child("TYProfiles");
         userid = firebaseAuth.getCurrentUser().getUid();
         userIdRef = userRef.child(userid);
         profileRef = userIdRef.child("profile");
@@ -112,9 +109,11 @@ public class ViewProfileStudentFY extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(ViewProfileStudentFY.this, "Error", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ViewProfileStudentTy.this, "Error", Toast.LENGTH_SHORT).show();
             }
         });
 
 
-    }}
+
+    }
+}

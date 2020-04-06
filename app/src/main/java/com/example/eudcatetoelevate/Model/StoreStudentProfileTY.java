@@ -1,10 +1,10 @@
 package com.example.eudcatetoelevate.Model;
 
-public class StoreStudentProfileSY {
+public class StoreStudentProfileTY {
     String name,email,phone,year,term,shift,batch;
     String enroll;
 
-    public StoreStudentProfileSY(String name, String email, String phone, String year, String term, String shift, String batch, String enroll) {
+    public StoreStudentProfileTY(String name, String email, String phone, String year, String term, String shift, String batch, String enroll) {
         this.name = name;
         this.email = email;
         this.phone = phone;
