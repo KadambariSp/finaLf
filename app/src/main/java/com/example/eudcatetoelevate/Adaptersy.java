@@ -52,7 +52,7 @@ public class Adaptersy extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 if(position == 0){
-                    Intent intent = new Intent(contextsy,viewcurrisy.class);
+                    Intent intent = new Intent(contextsy,currisy.class);
                     contextsy.startActivity(intent);
                 }
                 else if(position == 1){
@@ -65,10 +65,18 @@ public class Adaptersy extends PagerAdapter {
                 }
 
                 else if(position==3){
-                    Intent iy=new Intent(contextsy,ShowTextPostActivityStudents.class);
+                    Intent iy=new Intent(contextsy,questionpaper.class);
                     contextsy.startActivity(iy);
                 }
                 else if(position==4){
+                    Intent iy=new Intent(contextsy,ShowTextPostActivityStudents.class);
+                    contextsy.startActivity(iy);
+                }
+                else if(position==5){
+                    Intent iy=new Intent(contextsy,viewpdfstudent.class);
+                    contextsy.startActivity(iy);
+                }
+                else if(position==6){
                     Intent iy=new Intent(contextsy,coesa.class);
                     contextsy.startActivity(iy);
                 }

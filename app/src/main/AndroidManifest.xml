@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LogoutTy"></activity>
+        <activity android:name=".viewpdfstudent"></activity>
+        <activity android:name=".two" />
+        <activity android:name=".one" />
+        <activity android:name=".currify" />
+        <activity android:name=".ViewPdf1" />
+        <activity android:name=".pdfNotice" />
+        <activity android:name=".questionpaper" />
+        <activity android:name=".LogoutTy" />
         <activity android:name=".ViewProfileStudentTy" />
         <activity android:name=".ProfileActivityStudentTy" />
         <activity android:name=".LogoutParents" />
@@ -117,10 +124,10 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

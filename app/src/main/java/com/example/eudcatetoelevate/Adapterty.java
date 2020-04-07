@@ -54,7 +54,7 @@ public class Adapterty extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 if(position == 0){
-                    Intent intent = new Intent(contextty,viewcurrity.class);
+                    Intent intent = new Intent(contextty,pdf.class);
                     contextty.startActivity(intent);
                 }
                 else if(position == 1){
@@ -67,10 +67,18 @@ public class Adapterty extends PagerAdapter {
                 }
 
                 else if(position==3){
-                    Intent iy=new Intent(contextty,ShowTextPostActivityStudents.class);
+                    Intent iy=new Intent(contextty,questionpaper.class);
                     contextty.startActivity(iy);
                 }
                 else if(position==4){
+                    Intent iy=new Intent(contextty,ShowTextPostActivityStudents.class);
+                    contextty.startActivity(iy);
+                }
+                else if(position==5){
+                    Intent iy=new Intent(contextty,viewcurrity.class);
+                    contextty.startActivity(iy);
+                }
+                else if(position==6){
                     Intent iy=new Intent(contextty,coesa.class);
                     contextty.startActivity(iy);
                 }

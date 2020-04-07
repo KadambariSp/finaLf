@@ -20,12 +20,12 @@ public class swipeteacher extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swipeteacher);
         models = new ArrayList<>();
-        models.add(new ModelT(R.drawable.finalno, "Notice", ""));
+        models.add(new ModelT(R.drawable.finalno, "Image Notice", ""));
         models.add(new ModelT(R.drawable.academiccal, "Academic Calendar", ""));
         models.add(new ModelT(R.drawable.curiifinal, "Curriculum", ""));
-        models.add(new ModelT(R.drawable.dlist, "Detention List", ""));
-        models.add(new ModelT(R.drawable.marksss, "Marks", ""));
-        models.add(new ModelT(R.drawable.coesa, "Other Activities", ""));
+        models.add(new ModelT(R.drawable.dlist, "Text Notice", ""));
+        models.add(new ModelT(R.drawable.marksss, "Pdf Notice", ""));
+
         adapter = new Adapter(models, this);
 
         viewPager = findViewById(R.id.viewPager);
@@ -38,6 +38,7 @@ public class swipeteacher extends AppCompatActivity {
                 getResources().getColor(R.color.color3),
                 getResources().getColor(R.color.color4),
                 getResources().getColor(R.color.color5),
+
 
 
 

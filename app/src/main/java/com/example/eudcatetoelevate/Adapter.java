@@ -35,7 +35,7 @@ public class Adapter extends PagerAdapter {
 
     @NonNull
     @Override
-    public Object instantiateItem(@NonNull ViewGroup container, final int position) {
+    public Object instantiateItem(@NonNull final ViewGroup container, final int position) {
         layoutInflater = LayoutInflater.from(context);
         View view = layoutInflater.inflate(R.layout.item, container, false);
 
@@ -67,12 +67,13 @@ public class Adapter extends PagerAdapter {
                     Intent intent = new Intent(context,teacheruploadcurriculum.class);
                     context.startActivity(intent);
                 }
-                else  if (position==3){
-                    Intent intent = new Intent(context,AddTextPostActivityTeachers.class);
+
+                else if(position==3){
+                    Intent intent=new Intent(context,AddTextPostActivityTeachers.class);
                     context.startActivity(intent);
                 }
                 else if(position==4){
-                    Intent intent=new Intent(context,teacheruploadcurriculum.class);
+                    Intent intent= new Intent(context,teacheruploadcurriculum.class);
                     context.startActivity(intent);
                 }
 

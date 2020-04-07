@@ -41,6 +41,13 @@ public class uploadcurrify extends AppCompatActivity {
             public void onClick(View view) {
                 selectPDFFile();
             }
+
+
+
+
+
+
+
         });
 
     }
@@ -63,7 +70,7 @@ public class uploadcurrify extends AppCompatActivity {
 
     }
     private void uploadPDFFile(Uri data){
-        final ProgressDialog progressDialog=new ProgressDialog(this);
+        final  ProgressDialog progressDialog=new ProgressDialog(this);
         progressDialog.setTitle("Loading...");
         progressDialog.show();
         StorageReference reference=storageReference.child("uploadsfy/"+System.currentTimeMillis()+".pdf");
@@ -87,5 +94,10 @@ public class uploadcurrify extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void btn_action(View view) {
+
+        startActivity(new Intent(getApplicationContext(),listcurrify.class));
     }
 }

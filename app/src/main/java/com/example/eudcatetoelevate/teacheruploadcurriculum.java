@@ -26,7 +26,7 @@ public class teacheruploadcurriculum extends AppCompatActivity {
         currisy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(teacheruploadcurriculum.this,uploadcurrisy.class);
+                Intent intent = new Intent(teacheruploadcurriculum.this,pdfNotice.class);
                 startActivity(intent);
             }
         });

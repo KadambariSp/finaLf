@@ -24,7 +24,8 @@ public class swipesy extends AppCompatActivity {
         modelsy.add(new Modelsy(R.drawable.academiccal, "Academic Calendar", ""));
         modelsy.add(new Modelsy(R.drawable.finalno, "Notice", ""));
         modelsy.add(new Modelsy(R.drawable.dlist, "Question Paper", ""));
-        modelsy.add(new Modelsy(R.drawable.marksss, "Marks", ""));
+        modelsy.add(new Modelsy(R.drawable.marksss, "Text Notice", ""));
+        modelsy.add(new Modelsy(R.drawable.coesa, "Pdf Notice", ""));
         modelsy.add(new Modelsy(R.drawable.coesa, "Other Activities", ""));
         adaptersy = new Adaptersy(modelsy, this);
 

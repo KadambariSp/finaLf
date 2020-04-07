@@ -54,7 +54,7 @@ public class Adapterfy extends PagerAdapter {
             @Override
             public void onClick(View v) {
                 if(position == 0){
-                    Intent intent = new Intent(contextfy,viewcurrify.class);
+                    Intent intent = new Intent(contextfy,currify.class);
                     contextfy.startActivity(intent);
                 }
                 else if(position == 1){
@@ -67,12 +67,17 @@ public class Adapterfy extends PagerAdapter {
                 }
 
                 else if(position==3){
-                    Intent iy=new Intent(contextfy,ShowTextPostActivityStudents.class);
+                    Intent iy=new Intent(contextfy,questionpaper.class);
                     contextfy.startActivity(iy);
                 }
                 else if(position==4){
-                    Intent iy=new Intent(contextfy,coesa.class);
+                    Intent iy=new Intent(contextfy,ShowTextPostActivityStudents.class);
                     contextfy.startActivity(iy);
+                }
+                else if(position==5){
+                    Intent intent= new Intent(contextfy,viewcurrity.class);
+                    contextfy.startActivity(intent);
+
                 }
 
             }

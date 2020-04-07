@@ -2,10 +2,8 @@ package com.example.eudcatetoelevate;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-
 import android.animation.ArgbEvaluator;
 import android.os.Bundle;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,8 +23,10 @@ public class swipefy extends AppCompatActivity {
         modelfy.add(new Modelfy(R.drawable.academiccal, "Academic Calendar", ""));
         modelfy.add(new Modelfy(R.drawable.finalno, "Notice", ""));
         modelfy.add(new Modelfy(R.drawable.dlist, "Question Papers", ""));
-        modelfy.add(new Modelfy(R.drawable.marksss, "Marks", ""));
+        modelfy.add(new Modelfy(R.drawable.marksss, "Text Notice", ""));
+        modelfy.add(new Modelfy(R.drawable.coesa, "Pdf Notice", ""));
         modelfy.add(new Modelfy(R.drawable.coesa, "Other Activities", ""));
+
 
         adapterfy = new Adapterfy(modelfy, this);
 

@@ -24,7 +24,8 @@ public class swipety extends AppCompatActivity {
         modelty.add(new Modelty(R.drawable.academiccal, "Academic Calendar", ""));
         modelty.add(new Modelty(R.drawable.finalno, "Notice", ""));
         modelty.add(new Modelty(R.drawable.dlist, "Question Paper", ""));
-        modelty.add(new Modelty(R.drawable.marksss, "Marks", ""));
+        modelty.add(new Modelty(R.drawable.marksss, "Text Notice", ""));
+        modelty.add(new Modelty(R.drawable.coesa, "Pdf Notice", ""));
         modelty.add(new Modelty(R.drawable.coesa, "Other Activities", ""));
         adapterty = new Adapterty(modelty, this);
 

@@ -21,7 +21,7 @@ import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-public class uploadcurrity extends AppCompatActivity {
+public class pdfNotice extends AppCompatActivity {
     EditText editPDFName;
     Button btn_upload;
     StorageReference storageReference;
@@ -29,12 +29,12 @@ public class uploadcurrity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_uploadcurrity);
-        editPDFName=(EditText)findViewById(R.id.txt_pdfNamecurrity);
-        btn_upload=(Button)findViewById(R.id.btn_uploadcurrity);
+        setContentView(R.layout.activity_pdf_notice);
+        editPDFName=(EditText)findViewById(R.id.txt_pdfName);
+        btn_upload=(Button)findViewById(R.id.btn_upload);
 
         storageReference= FirebaseStorage.getInstance().getReference();
-        databaseReference = FirebaseDatabase.getInstance().getReference("uploadsty");
+        databaseReference = FirebaseDatabase.getInstance().getReference("uploads");
         btn_upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,7 +72,7 @@ public class uploadcurrity extends AppCompatActivity {
         final  ProgressDialog progressDialog=new ProgressDialog(this);
         progressDialog.setTitle("Loading...");
         progressDialog.show();
-        StorageReference reference=storageReference.child("uploadsty/"+System.currentTimeMillis()+".pdf");
+        StorageReference reference=storageReference.child("uploads/"+System.currentTimeMillis()+".pdf");
         reference.putFile(data).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
@@ -80,9 +80,9 @@ public class uploadcurrity extends AppCompatActivity {
                 Task<Uri> uri=taskSnapshot.getStorage().getDownloadUrl();
                 while(!uri.isComplete());
                 Uri url=uri.getResult();
-                tygetset uploadPDF=new tygetset(editPDFName.getText().toString(),url.toString());
+                uploadPDF1 uploadPDF=new uploadPDF1(editPDFName.getText().toString(),url.toString());
                 databaseReference.child(databaseReference.push().getKey()).setValue(uploadPDF);
-                Toast.makeText(uploadcurrity.this,"File Uploaded Successfully!",Toast.LENGTH_SHORT).show();
+                Toast.makeText(pdfNotice.this,"File Uploaded Successfully!",Toast.LENGTH_SHORT).show();
                 progressDialog.dismiss();
             }
         }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
@@ -97,6 +97,6 @@ public class uploadcurrity extends AppCompatActivity {
 
     public void btn_action(View view) {
 
-        startActivity(new Intent(getApplicationContext(),listcurrity.class));
+        startActivity(new Intent(getApplicationContext(),ViewPdf1.class));
     }
 }

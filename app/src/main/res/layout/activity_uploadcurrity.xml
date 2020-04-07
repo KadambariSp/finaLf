@@ -7,15 +7,15 @@
     android:padding="20dp"
     android:background="#FFF"
     tools:context=".uploadcurrity">
+
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="220dp"
         android:layout_height="220dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
         android:layout_marginBottom="456dp"
         android:background="@drawable/curiifinal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,6 +71,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.699" />
 
+    <Button
+        android:id="@+id/btn_upload2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:elevation="10dp"
+        android:fontFamily="@font/montserratmedium"
+        android:onClick="btn_action"
+        android:text="    View Pdf       "
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.695"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
