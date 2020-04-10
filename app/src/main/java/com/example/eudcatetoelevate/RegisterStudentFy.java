@@ -33,11 +33,8 @@ import static com.google.firebase.auth.FirebaseAuth.getInstance;
 public class RegisterStudentFy extends AppCompatActivity {
     EditText txtUser, txtEmail, txtPassword, txtRetypePassword;
     ProgressBar progressBar;
-   // private FirebaseAuth mAuth;
-    //private TextView forgotPassword;
     private FirebaseDatabase database;
     private DatabaseReference rootRef, userRef, useridRef;
-    //private String userEmail, sameEmail, loginEmail;
     private Button SignUp;
     TextView signIn;
     private FirebaseAuth firebaseAuth;
@@ -61,12 +58,8 @@ public class RegisterStudentFy extends AppCompatActivity {
         SignUp = findViewById(R.id.buttonRegisterStudentFy);
         progressBar = findViewById(R.id.progressBarFy);
         firebaseAuth = FirebaseAuth.getInstance();
-        //mAuth = getInstance();
         database = FirebaseDatabase.getInstance();
         rootRef = database.getReference();
-
-        // database = FirebaseDatabase.getInstance();
-        //rootRef = database.getReference();
         userRef = rootRef.child("FIRST YEAR");
         SignUp.setOnClickListener(new View.OnClickListener() {
                                       @Override
@@ -76,19 +69,19 @@ public class RegisterStudentFy extends AppCompatActivity {
                                           String password = txtPassword.getText().toString().trim();
                                           String confirmPassword = txtRetypePassword.getText().toString().trim();
                                           if (TextUtils.isEmpty(username)) {
-                                              Toast.makeText(RegisterStudentFy.this, "Please enter username", Toast.LENGTH_SHORT).show();
+                                              Toast.makeText(RegisterStudentFy.this, "Username is Empty", Toast.LENGTH_SHORT).show();
                                               return;
                                           }
                                           if (TextUtils.isEmpty(email)) {
-                                              Toast.makeText(RegisterStudentFy.this, "Please enter email", Toast.LENGTH_SHORT).show();
+                                              Toast.makeText(RegisterStudentFy.this, "Email is Empty", Toast.LENGTH_SHORT).show();
                                               return;
                                           }
                                           if (TextUtils.isEmpty(password)) {
-                                              Toast.makeText(RegisterStudentFy.this, "Please enter password", Toast.LENGTH_SHORT).show();
+                                              Toast.makeText(RegisterStudentFy.this, "You have to enter Password to register", Toast.LENGTH_SHORT).show();
                                               return;
                                           }
                                           if (TextUtils.isEmpty(confirmPassword)) {
-                                              Toast.makeText(RegisterStudentFy.this, "Please enter confirm password", Toast.LENGTH_SHORT).show();
+                                              Toast.makeText(RegisterStudentFy.this, "enter confirm password", Toast.LENGTH_SHORT).show();
                                               return;
                                           }
 
@@ -108,7 +101,7 @@ public class RegisterStudentFy extends AppCompatActivity {
                                                                       @Override
                                                                       public void onComplete(@NonNull Task<Void> task) {
                                                                           if (task.isSuccessful()) {
-                                                                              Toast.makeText(RegisterStudentFy.this, "Registration Successfully.Please check your email for verification", Toast.LENGTH_SHORT).show();
+                                                                              Toast.makeText(RegisterStudentFy.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                                                                               txtUser.setText("");
                                                                               txtEmail.setText("");
                                                                               txtPassword.setText("");

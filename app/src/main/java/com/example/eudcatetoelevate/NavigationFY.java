@@ -150,6 +150,7 @@ public class NavigationFY extends AppCompatActivity implements NavigationView.On
             case R.id.nav_logout_fy:
                 Intent ii=new Intent(NavigationFY.this,LogoutFy.class);
                 startActivity(ii);
+                break;
 
         }
         drawerLayout.closeDrawer(GravityCompat.START);

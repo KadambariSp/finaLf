@@ -31,8 +31,8 @@ public class ProfileActivityStudentTy extends AppCompatActivity {
     private FirebaseUser firebaseUser;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference profileRef, rootRef, userRef, userIdRef, mDatabaseRef;
-    EditText student_profile_username,student_profile_email,student_profile_phonenumber,student_profile_year,student_profile_term;
-    EditText student_profile_shift,student_profile_batch,student_profile_enroll;
+    EditText student_profile_username, student_profile_email, student_profile_phonenumber, student_profile_year, student_profile_term;
+    EditText student_profile_shift, student_profile_batch, student_profile_enroll;
     Button student_profile_save_button;
 
     @Override
@@ -40,14 +40,14 @@ public class ProfileActivityStudentTy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_student_ty);
         final TextView textView = findViewById(R.id.text_profile_student);
-        student_profile_username=findViewById(R.id.student_profile_username_ty);
-        student_profile_email=findViewById(R.id.student_profile_email_ty);
-        student_profile_phonenumber=findViewById(R.id.student_profile_phonenumber_ty);
-        student_profile_year=findViewById(R.id.student_profile_year_ty);
-        student_profile_term=findViewById(R.id.student_profile_term_ty);
-        student_profile_shift=findViewById(R.id.student_profile_shift_ty);
-        student_profile_batch=findViewById(R.id.student_profile_batch_ty);
-        student_profile_enroll=findViewById(R.id.student_profile_enroll_ty);
+        student_profile_username = findViewById(R.id.student_profile_username_ty);
+        student_profile_email = findViewById(R.id.student_profile_email_ty);
+        student_profile_phonenumber = findViewById(R.id.student_profile_phonenumber_ty);
+        student_profile_year = findViewById(R.id.student_profile_year_ty);
+        student_profile_term = findViewById(R.id.student_profile_term_ty);
+        student_profile_shift = findViewById(R.id.student_profile_shift_ty);
+        student_profile_batch = findViewById(R.id.student_profile_batch_ty);
+        student_profile_enroll = findViewById(R.id.student_profile_enroll_ty);
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
         firebaseStorage = FirebaseStorage.getInstance();
@@ -58,7 +58,6 @@ public class ProfileActivityStudentTy extends AppCompatActivity {
         StorageReference ProfileRef = useridReference.child("profile/");
         mStorageRef = FirebaseStorage.getInstance().getReference("uploads");
         mDatabaseRef = FirebaseDatabase.getInstance().getReference("uploads");
-
 
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -72,7 +71,6 @@ public class ProfileActivityStudentTy extends AppCompatActivity {
         student_profile_save_button = findViewById(R.id.student_profile_save_ty);
 
 
-
         profileRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -81,7 +79,7 @@ public class ProfileActivityStudentTy extends AppCompatActivity {
                     String email = dataSnapshot.child("email").getValue().toString();
                     String phone = dataSnapshot.child("phone").getValue().toString();
                     String Year = dataSnapshot.child("year").getValue().toString();
-                    String Term= dataSnapshot.child("term").getValue().toString();
+                    String Term = dataSnapshot.child("term").getValue().toString();
                     String Shift = dataSnapshot.child("shift").getValue().toString();
                     String Batch = dataSnapshot.child("batch").getValue().toString();
                     String EnrollmentNumber = dataSnapshot.child("enroll").getValue().toString();
@@ -107,60 +105,16 @@ public class ProfileActivityStudentTy extends AppCompatActivity {
         student_profile_save_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String name, email, phone, year,term, shift, batch, enroll;
+                final String name, email, phone, year, term, shift, batch, enroll;
                 name = student_profile_username.getText().toString();
                 email = student_profile_email.getText().toString();
                 phone = student_profile_phonenumber.getText().toString();
-                year= student_profile_year.getText().toString();
+                year = student_profile_year.getText().toString();
                 term = student_profile_term.getText().toString();
                 shift = student_profile_shift.getText().toString();
                 batch = student_profile_batch.getText().toString();
                 enroll = student_profile_enroll.getText().toString();
-                //     profileImage = findViewById(R.id.student_profile_imageView);
-
-
-                if (TextUtils.isEmpty(name)) {
-                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter Full name", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(email)) {
-
-                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter email", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(phone)) {
-                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter phone number", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(year)) {
-                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter company name", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(term)) {
-                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter company location", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(shift)) {
-                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter company location", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(batch)) {
-                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter company location", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(enroll)) {
-                    Toast.makeText(ProfileActivityStudentTy.this, "Please enter fields of Interest", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                student_profile_save_button.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        // uploadImage();
-                    }
-                });
-
-
-                StoreStudentProfileTY storeStudentProfileTY = new StoreStudentProfileTY(name,email,phone,year,term,shift,batch,enroll);
+                StoreStudentProfileTY storeStudentProfileTY = new StoreStudentProfileTY(name, email, phone, year, term, shift, batch, enroll);
                 profileRef.setValue(storeStudentProfileTY).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
@@ -172,9 +126,6 @@ public class ProfileActivityStudentTy extends AppCompatActivity {
 
 
         });
-
-
-
 
 
     }

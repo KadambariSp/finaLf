@@ -21,20 +21,15 @@
         <menu>
             <group android:checkableBehavior="single">
 
-                <item
-                    android:id="@+id/nav_account_teacher"
-                    android:icon="@drawable/account"
-                    android:title="Your Account"></item>
+           <item android:id="@+id/nav_forgotpass_teacher"
+               android:icon="@drawable/submitprofile"
+               android:title="Forgot Password"
+               />
                 <item
                     android:id="@+id/nav_logout_teacher"
                     android:icon="@drawable/logout"
                     android:title="Log Out"></item>
-                <item
-                    android:id="@+id/nav_profile_teacher"
-                    android:icon="@drawable/submitprofile"
-                    android:title=" Submit Profile">
 
-                </item>
             </group>
         </menu>
     </item>

@@ -59,8 +59,8 @@ NavigationTeachers extends AppCompatActivity implements NavigationView.OnNavigat
         mostImpFyRecyclerViewTeachers.setHasFixedSize(true);
         mostImpFyRecyclerViewTeachers.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<MostImpHelperClassTeacher> mostImpTeacherLocations = new ArrayList<>();
-        mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.spinner, "abc", "xyz"));
-        mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.coder, "jyhtgrfed", "vcdx"));
+        mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.spinner, "Substitute for College Website", "xyz"));
+        mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.coder, "", "vcdx"));
         mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.project, "xsza", "cxsz"));
         mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.androidty, "XZA", "sa"));
         adapterMostImpTeachers = new MostImpAdapterTeachers(mostImpTeacherLocations);
@@ -140,17 +140,14 @@ NavigationTeachers extends AppCompatActivity implements NavigationView.OnNavigat
                 Intent i1 = new Intent(NavigationTeachers.this, swipeteacher.class);
                 startActivity(i1);
                 break;
-            case R.id.nav_account_teacher:
-                Intent i2 = new Intent(NavigationTeachers.this, ViewProfileTeachers.class);
-                startActivity(i2);
-                break;
-            case R.id.nav_profile_teacher:
-                Intent i3 = new Intent(NavigationTeachers.this, ProfileActivityTeachers.class);
-                startActivity(i3);
+            case R.id.nav_aboutus_teachers:
+                Intent abt = new Intent(NavigationTeachers.this, aboutus.class);
+                startActivity(abt);
                 break;
             case R.id.nav_logout_teacher:
-                Intent logout_t=new Intent(NavigationTeachers.this,LogoutTeacher.class);
+                Intent logout_t = new Intent(NavigationTeachers.this, LogoutTeacher.class);
                 startActivity(logout_t);
+                break;
 
         }
         drawerLayout.closeDrawer(GravityCompat.START);

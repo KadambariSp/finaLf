@@ -39,7 +39,7 @@ public class LoginStudentSy extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference rootRef, userRef, useridRef;
     private String userEmail, sameEmail, loginEmail;
-    //for one time login
+
 
     FirebaseAuth.AuthStateListener authStateListener = new FirebaseAuth.AuthStateListener() {
         @Override
@@ -52,8 +52,9 @@ public class LoginStudentSy extends AppCompatActivity {
                 useridRef = userRef.child(userid);
                 final ProgressDialog pd = new ProgressDialog(LoginStudentSy.this);
                 pd.setTitle("Logging Student");
-                pd.setMessage("Wait...");
+                pd.setMessage("Wait for a While...");
                 pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.setIcon(R.drawable.loading);
                 pd.show();
 
                 useridRef.child("username").child("username").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -74,7 +75,7 @@ public class LoginStudentSy extends AppCompatActivity {
                 });
 
             } else {
-                Toast.makeText(LoginStudentSy.this, "Please Sign in ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginStudentSy.this, "It Seems that You haven't logged in!", Toast.LENGTH_SHORT).show();
             }
         }
     };
@@ -110,8 +111,8 @@ public class LoginStudentSy extends AppCompatActivity {
                     Toast.makeText(LoginStudentSy.this, "Password too short", Toast.LENGTH_SHORT).show();
                 }
                 final ProgressDialog pd = new ProgressDialog(LoginStudentSy.this);
-                pd.setTitle("Logging Student");
-                pd.setMessage("Please wait validating credentials and logging in.");
+                pd.setTitle("Wait for Sometime");
+                pd.setMessage("Authenticating Student");
                 pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
                 pd.show();
 
@@ -134,7 +135,7 @@ public class LoginStudentSy extends AppCompatActivity {
                                                     startActivity(new Intent(LoginStudentSy.this, NavigationSY.class));
                                                 } else {
                                                     FirebaseAuth.getInstance().signOut();
-                                                    Toast.makeText(LoginStudentSy.this, "Please login using a Student account only ", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(LoginStudentSy.this, "You are not authorized as Student Please Log in using Second Year Account", Toast.LENGTH_SHORT).show();
                                                     finish();
                                                     startActivity(new Intent(LoginStudentSy.this, LoginStudentTy.class));
                                                 }
@@ -146,7 +147,7 @@ public class LoginStudentSy extends AppCompatActivity {
                                             }
                                         });
                                     } else {
-                                        Toast.makeText(LoginStudentSy.this, "Please verify your email address", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(LoginStudentSy.this, "Email Address is not yet Verified", Toast.LENGTH_SHORT).show();
 
 
                                     }

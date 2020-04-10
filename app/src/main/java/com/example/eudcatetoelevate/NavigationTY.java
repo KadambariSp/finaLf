@@ -143,6 +143,10 @@ public class NavigationTY extends AppCompatActivity implements NavigationView.On
                 Intent i3 = new Intent(NavigationTY.this, ViewProfileStudentTy.class);
                 startActivity(i3);
                 break;
+            case R.id.nav_aboutus_ty:
+                Intent intent = new Intent(NavigationTY.this, aboutus.class);
+                startActivity(intent);
+                break;
             case R.id.nav_logout_ty:
                 Intent ii = new Intent(NavigationTY.this, LogoutTy.class);
                 startActivity(ii);

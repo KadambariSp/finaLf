@@ -39,7 +39,9 @@ public class LoginParent extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference rootRef, userRef, useridRef;
     private String userEmail, sameEmail, loginEmail;
-    //for one time login
+
+
+
 
     FirebaseAuth.AuthStateListener authStateListener = new FirebaseAuth.AuthStateListener() {
         @Override
@@ -52,8 +54,9 @@ public class LoginParent extends AppCompatActivity {
                 useridRef = userRef.child(userid);
                 final ProgressDialog pd = new ProgressDialog(LoginParent.this);
                 pd.setTitle("Logging As Parent");
-                pd.setMessage("Please wait logging in");
+                pd.setMessage("Wait for a while....");
                 pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.setIcon(R.drawable.loading);
                 pd.show();
 
                 useridRef.child("username").child("username").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -76,7 +79,7 @@ public class LoginParent extends AppCompatActivity {
 
             }
             else{
-                Toast.makeText(LoginParent.this, "Please Sign in ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LoginParent.this, "It Seems that You haven't logged in!", Toast.LENGTH_SHORT).show();
             }
         }
     };
@@ -107,12 +110,13 @@ public class LoginParent extends AppCompatActivity {
                     return;
                 }
                 if(password.length()<6){
-                    Toast.makeText(LoginParent.this, "Password too short", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginParent.this, "Password is Very Short", Toast.LENGTH_SHORT).show();
                 }
                 final ProgressDialog pd = new ProgressDialog(LoginParent.this);
-                pd.setTitle("Logging Parent..");
-                pd.setMessage("Please wait validating credentials and logging in......");
+                pd.setTitle("Wait for Sometime...");
+                pd.setMessage("Authenticating User");
                 pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.setIcon(R.drawable.loading);
                 pd.show();
                 mAuth .signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(LoginParent.this, new OnCompleteListener<AuthResult>() {
@@ -134,7 +138,7 @@ public class LoginParent extends AppCompatActivity {
                                                     pd.dismiss();
                                                 } else {
                                                     FirebaseAuth.getInstance().signOut();
-                                                    Toast.makeText(LoginParent.this, "Please login using a Parent account only ", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(LoginParent.this, "You are not authorized as Parent Please Log in using Parent", Toast.LENGTH_SHORT).show();
                                                     finish();
                                                     pd.dismiss();
                                                     startActivity(new Intent(LoginParent.this,LoginParent.class));
@@ -147,7 +151,7 @@ public class LoginParent extends AppCompatActivity {
                                             }
                                         });
                                     }else{
-                                        Toast.makeText(LoginParent.this,"Dear user, Please Verify Your Email Address First",Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(LoginParent.this,"Dear Parent, Please Verify Your Email Address First",Toast.LENGTH_SHORT).show();
 
 
                                     }

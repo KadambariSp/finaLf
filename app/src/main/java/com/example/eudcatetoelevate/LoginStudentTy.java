@@ -30,7 +30,7 @@ import java.util.Objects;
 import static com.google.firebase.auth.FirebaseAuth.getInstance;
 
 public class LoginStudentTy extends AppCompatActivity {
-    EditText txtEmail,txtPassword;
+    EditText txtEmail, txtPassword;
     ProgressBar progressBar;
     Button btn_student_Login;
     private TextView Student_signup;
@@ -39,21 +39,22 @@ public class LoginStudentTy extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference rootRef, userRef, useridRef;
     private String userEmail, sameEmail, loginEmail;
-    //for one time login
+
 
     FirebaseAuth.AuthStateListener authStateListener = new FirebaseAuth.AuthStateListener() {
         @Override
         public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
             FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
             if (firebaseUser != null) {
-                String userid=firebaseUser.getUid();
+                String userid = firebaseUser.getUid();
                 userEmail = firebaseUser.getEmail();
-                userRef=rootRef.child("THIRD YEAR");
+                userRef = rootRef.child("THIRD YEAR");
                 useridRef = userRef.child(userid);
                 final ProgressDialog pd = new ProgressDialog(LoginStudentTy.this);
                 pd.setTitle("Logging Student");
                 pd.setMessage("Wait for Sometime...");
                 pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.setIcon(R.drawable.loading);
                 pd.show();
 
                 useridRef.child("username").child("username").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -73,60 +74,61 @@ public class LoginStudentTy extends AppCompatActivity {
                     }
                 });
 
-            }
-            else{
-                Toast.makeText(LoginStudentTy.this, "Please Sign in ", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(LoginStudentTy.this, "It seems that you haven't logged in yet", Toast.LENGTH_SHORT).show();
             }
         }
     };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_student_ty);
-       txtEmail=(EditText) findViewById(R.id.etUsernameTyLogin);
-        txtPassword=(EditText)findViewById(R.id.etPasswordTyLogin);
-        btn_student_Login   = (Button) findViewById(R.id.buttonLoginStudentTy);
-        Student_signup=(TextView)findViewById(R.id.TvRegisterStudentTy);
-        progressBar=(ProgressBar) findViewById(R.id.progressBarTyLogin);
+        txtEmail = (EditText) findViewById(R.id.etUsernameTyLogin);
+        txtPassword = (EditText) findViewById(R.id.etPasswordTyLogin);
+        btn_student_Login = (Button) findViewById(R.id.buttonLoginStudentTy);
+        Student_signup = (TextView) findViewById(R.id.TvRegisterStudentTy);
+        progressBar = (ProgressBar) findViewById(R.id.progressBarTyLogin);
 
         mAuth = getInstance();
         database = FirebaseDatabase.getInstance();
         rootRef = database.getReference();
 
-        btn_student_Login.setOnClickListener(new View.OnClickListener(){
+        btn_student_Login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                final String email =txtEmail.getText().toString().trim();
-                String password=txtPassword.getText().toString().trim();
+            public void onClick(View v) {
+                final String email = txtEmail.getText().toString().trim();
+                String password = txtPassword.getText().toString().trim();
 
 
-                if(TextUtils.isEmpty(email)){
+                if (TextUtils.isEmpty(email)) {
                     Toast.makeText(LoginStudentTy.this, "Please enter email", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(TextUtils.isEmpty(password)){
+                if (TextUtils.isEmpty(password)) {
                     Toast.makeText(LoginStudentTy.this, "Please enter password", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
 
-                if(password.length()<6){
+                if (password.length() < 6) {
                     Toast.makeText(LoginStudentTy.this, "Password too short", Toast.LENGTH_SHORT).show();
                 }
 
 
                 final ProgressDialog pd = new ProgressDialog(LoginStudentTy.this);
-                pd.setTitle("Logging Student");
-                pd.setMessage("Please wait validating credentials and logging in.");
+                pd.setTitle("Wait for sometime...");
+                pd.setMessage("Authenticating Student");
                 pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.setIcon(R.drawable.loading);
                 pd.show();
-                mAuth .signInWithEmailAndPassword(email, password)
+                mAuth.signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener(LoginStudentTy.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 progressBar.setVisibility(View.GONE);
                                 if (task.isSuccessful()) {
-                                    if(mAuth.getCurrentUser().isEmailVerified()) {
+                                    if (mAuth.getCurrentUser().isEmailVerified()) {
                                         String userid = mAuth.getCurrentUser().getUid();
                                         userRef = rootRef.child("THIRD YEAR");
                                         useridRef = userRef.child(userid);
@@ -139,9 +141,9 @@ public class LoginStudentTy extends AppCompatActivity {
                                                     startActivity(new Intent(LoginStudentTy.this, NavigationTY.class));
                                                 } else {
                                                     FirebaseAuth.getInstance().signOut();
-                                                    Toast.makeText(LoginStudentTy.this, "Please login using a Student account only ", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(LoginStudentTy.this, "You are not authorized as Student Please Log in using Third Year Account ", Toast.LENGTH_SHORT).show();
                                                     finish();
-                                                    startActivity(new Intent(LoginStudentTy.this,LoginStudentTy.class));
+                                                    startActivity(new Intent(LoginStudentTy.this, LoginStudentTy.class));
                                                 }
                                             }
 
@@ -150,11 +152,11 @@ public class LoginStudentTy extends AppCompatActivity {
                                                 //error message
                                             }
                                         });
-                                    }else{
-                                        Toast.makeText(LoginStudentTy.this,"Please verify your email address",Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        Toast.makeText(LoginStudentTy.this, "Email id is not yet Verified", Toast.LENGTH_SHORT).show();
                                     }
                                 } else {
-                                    Toast.makeText(LoginStudentTy.this, task.getException().getMessage(),Toast.LENGTH_LONG).show();
+                                    Toast.makeText(LoginStudentTy.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
 
                                 }
 
@@ -167,7 +169,7 @@ public class LoginStudentTy extends AppCompatActivity {
         Student_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginStudentTy.this,RegisterStudentTy.class));
+                startActivity(new Intent(LoginStudentTy.this, RegisterStudentTy.class));
             }
         });
 

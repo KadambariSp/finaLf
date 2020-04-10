@@ -20,6 +20,7 @@ public class NavigationParents extends AppCompatActivity implements NavigationVi
     ImageView navParentsClick;
     LinearLayout contentView;
     static final float END_SCALE = 0.7f;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,11 +93,15 @@ public class NavigationParents extends AppCompatActivity implements NavigationVi
                 startActivity(i);
                 break;
             case R.id.nav_explore_parents:
-                Intent ie=new Intent(NavigationParents.this,swipep.class);
+                Intent ie = new Intent(NavigationParents.this, swipep.class);
                 startActivity(ie);
                 break;
+            case R.id.nav_aboutus_parents:
+                Intent abtp = new Intent(NavigationParents.this, aboutus.class);
+                startActivity(abtp);
+                break;
             case R.id.nav_logout_parents:
-                Intent ii=new Intent(NavigationParents.this,LogoutParents.class);
+                Intent ii = new Intent(NavigationParents.this, LogoutParents.class);
                 startActivity(ii);
 
 

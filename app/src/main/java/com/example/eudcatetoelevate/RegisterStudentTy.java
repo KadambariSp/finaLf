@@ -58,19 +58,19 @@ public class RegisterStudentTy extends AppCompatActivity {
                                             String password=txtPassword.getText().toString().trim();
                                             String confirmPassword=txtRetypePassword.getText().toString().trim();
                                             if(TextUtils.isEmpty(username)){
-                                                Toast.makeText(RegisterStudentTy.this, "Please enter username", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(RegisterStudentTy.this, "Username is Empty", Toast.LENGTH_SHORT).show();
                                                 return;
                                             }
                                             if(TextUtils.isEmpty(email)){
-                                                Toast.makeText(RegisterStudentTy.this, "Please enter email", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(RegisterStudentTy.this, "Email id is empty", Toast.LENGTH_SHORT).show();
                                                 return;
                                             }
                                             if(TextUtils.isEmpty(password)){
-                                                Toast.makeText(RegisterStudentTy.this, "Please enter password", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(RegisterStudentTy.this, "You have to enter Password to register", Toast.LENGTH_SHORT).show();
                                                 return;
                                             }
                                             if(TextUtils.isEmpty(confirmPassword)){
-                                                Toast.makeText(RegisterStudentTy.this, "Please enter confirm password", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(RegisterStudentTy.this, "enter confirm password", Toast.LENGTH_SHORT).show();
                                                 return;
                                             }
 
@@ -90,7 +90,7 @@ public class RegisterStudentTy extends AppCompatActivity {
                                                                         @Override
                                                                         public void onComplete(@NonNull Task<Void> task) {
                                                                             if (task.isSuccessful()) {
-                                                                                Toast.makeText(RegisterStudentTy.this, "Registration Successfully.Please chcek your email for verification", Toast.LENGTH_SHORT).show();
+                                                                                Toast.makeText(RegisterStudentTy.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                                                                                 txtUser.setText("");
                                                                                 txtEmail.setText("");
                                                                                 txtPassword.setText("");

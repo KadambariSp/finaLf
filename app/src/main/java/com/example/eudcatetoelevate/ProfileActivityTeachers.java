@@ -34,7 +34,7 @@ public class ProfileActivityTeachers extends AppCompatActivity {
     DatabaseReference profileRef, rootRef, userRef, userIdRef, mDatabaseRef;
     EditText student_profile_username,student_profile_email,student_profile_phonenumber,student_profile_city,student_profile_qualification;
     EditText student_profile_collegename,student_profile_passing_year,student_profile_fields;
-    Button student_profile_resumesavebutton;
+    Button student_profile_save_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +70,7 @@ public class ProfileActivityTeachers extends AppCompatActivity {
         String userId = firebaseAuth.getCurrentUser().getUid().toString();
         userIdRef = userRef.child(userId);
         profileRef = userIdRef.child("profile");
-        student_profile_resumesavebutton = findViewById(R.id.teacher_profile_resumesavebutton);
+        student_profile_save_button = findViewById(R.id.teacher_profile_resumesavebutton);
 
         profileRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -103,7 +103,7 @@ public class ProfileActivityTeachers extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError databaseError) {
             }
         });
-        student_profile_resumesavebutton.setOnClickListener(new View.OnClickListener() {
+        student_profile_save_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final String name, email, phone, city, qualification, collegeName, passingYear, fields;
@@ -115,50 +115,6 @@ public class ProfileActivityTeachers extends AppCompatActivity {
                 collegeName = student_profile_collegename.getText().toString();
                 passingYear = student_profile_passing_year.getText().toString();
                 fields = student_profile_fields.getText().toString();
-                //     profileImage = findViewById(R.id.student_profile_imageView);
-
-
-                if (TextUtils.isEmpty(name)) {
-                    Toast.makeText(ProfileActivityTeachers.this, "Please enter Full name", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(email)) {
-
-                    Toast.makeText(ProfileActivityTeachers.this, "Please enter email", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(phone)) {
-                    Toast.makeText(ProfileActivityTeachers.this, "Please enter phone number", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(city)) {
-                    Toast.makeText(ProfileActivityTeachers.this, "Please enter company name", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(qualification)) {
-                    Toast.makeText(ProfileActivityTeachers.this, "Please enter company location", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(collegeName)) {
-                    Toast.makeText(ProfileActivityTeachers.this, "Please enter company location", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(passingYear)) {
-                    Toast.makeText(ProfileActivityTeachers.this, "Please enter company location", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(fields)) {
-                    Toast.makeText(ProfileActivityTeachers.this, "Please enter fields of Interest", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                student_profile_resumesavebutton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        // uploadImage();
-                    }
-                });
-
-
                 StoreTeacherProfile stp = new StoreTeacherProfile(name, email, phone, city, qualification, collegeName, passingYear, fields);
                 profileRef.setValue(stp).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

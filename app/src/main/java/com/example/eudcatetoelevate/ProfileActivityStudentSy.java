@@ -117,50 +117,6 @@ student_profile_save_button.setOnClickListener(new View.OnClickListener() {
         shift = student_profile_shift.getText().toString();
         batch = student_profile_batch.getText().toString();
         enroll = student_profile_enroll.getText().toString();
-        //     profileImage = findViewById(R.id.student_profile_imageView);
-
-
-        if (TextUtils.isEmpty(name)) {
-            Toast.makeText(ProfileActivityStudentSy.this, "Please enter Full name", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (TextUtils.isEmpty(email)) {
-
-            Toast.makeText(ProfileActivityStudentSy.this, "Please enter email", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (TextUtils.isEmpty(phone)) {
-            Toast.makeText(ProfileActivityStudentSy.this, "Please enter phone number", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (TextUtils.isEmpty(year)) {
-            Toast.makeText(ProfileActivityStudentSy.this, "Please enter company name", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (TextUtils.isEmpty(term)) {
-            Toast.makeText(ProfileActivityStudentSy.this, "Please enter company location", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (TextUtils.isEmpty(shift)) {
-            Toast.makeText(ProfileActivityStudentSy.this, "Please enter company location", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (TextUtils.isEmpty(batch)) {
-            Toast.makeText(ProfileActivityStudentSy.this, "Please enter company location", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (TextUtils.isEmpty(enroll)) {
-            Toast.makeText(ProfileActivityStudentSy.this, "Please enter fields of Interest", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        student_profile_save_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // uploadImage();
-            }
-        });
-
-
         StoreStudentProfileSY storeStudentProfileSY = new StoreStudentProfileSY(name,email,phone,year,term,shift,batch,enroll);
         profileRef.setValue(storeStudentProfileSY).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override

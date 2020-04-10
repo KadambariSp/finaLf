@@ -60,9 +60,9 @@ public class NavigationSY extends AppCompatActivity implements NavigationView.On
         mostImpFyRecyclerViewSy.setHasFixedSize(true);
         mostImpFyRecyclerViewSy.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<MostImpHelperClassSy> mostImpSyLocations = new ArrayList<>();
-        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.internet1, "Internet is all you need", "As you All know that internet is wide resource to  Learn anything! Go and do it now!"));
-        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.library1, "C programming Books ", "Our Curriculum has bunch of options to explore knowledge! go and check books from libraryy!!"));
-        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.coder, "All IDE's , text Editors", "Practical Knowledge is Way better than Therotical one!! if you sincerely do all practicals by your own then nobody will stop you!! "));
+        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.sqlsy, "Structured Query Language", "Let's learn interesting about RDBMS in this year"));
+        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.cn, "Computer Networks", "Networking skills are also important and this subject is Base for that"));
+        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.vb, "Visual Basics", "The most creative and simple subject yet techy! Ohh yes now you can create web applications by learning this subject"));
         adapterMostImpSy = new MostImpAdapterSy(mostImpSyLocations);
         mostImpFyRecyclerViewSy.setAdapter(adapterMostImpSy);
     }
@@ -71,10 +71,10 @@ public class NavigationSY extends AppCompatActivity implements NavigationView.On
         codingRecyclerViewSy.setHasFixedSize(true);
         codingRecyclerViewSy.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<CodingHelperClassSy> codingSyLocations = new ArrayList<>();
-        codingSyLocations.add(new CodingHelperClassSy(R.drawable.basics, "start from Basic!", "As you know to Learn Anything you first have to clear it's base so just Do it!"));
-        codingSyLocations.add(new CodingHelperClassSy(R.drawable.clang, "C Language ", "Assembly Language is powerful yet difficult , So c comes into picture!!"));
-        codingSyLocations.add(new CodingHelperClassSy(R.drawable.csy, "C ++", "C++ Object oriented Programming it is Advanced Version Of C !"));
-        codingSyLocations.add(new CodingHelperClassSy(R.drawable.htmllang1, "HTML", "Web Development is huge place for one who loves to do creative yet techy things !"));
+        codingSyLocations.add(new CodingHelperClassSy(R.drawable.basics, "WHY INTERNSHIPS ARE SO IMPORTANT NOWADAYS?", "you already knows that there is so many competition all Around and you must have to improve your knowledge not by just reading books ! Try to learn everything Practically "));
+        codingSyLocations.add(new CodingHelperClassSy(R.drawable.clang, "Company Experiences", "You must have some kind of experience about what's happening in corporate world , what are the leading languages , technologies and many other Things"));
+        codingSyLocations.add(new CodingHelperClassSy(R.drawable.csy, "Details about it", "You have to do one month internship in any technical institute/firm on any filed related topic"));
+        codingSyLocations.add(new CodingHelperClassSy(R.drawable.htmllang1, "What will you get?", "By doing this you will get certificates which are valuable also with corporate experiences"));
         adapterSy = new CodingAdapterSy(codingSyLocations);
         codingRecyclerViewSy.setAdapter(adapterSy);
     }
@@ -146,9 +146,14 @@ public class NavigationSY extends AppCompatActivity implements NavigationView.On
                 Intent i4 = new Intent(NavigationSY.this,swipesy.class);
                 startActivity(i4);
                 break;
+            case R.id.nav_aboutus_sy:
+                Intent abt=new Intent(NavigationSY.this,aboutus.class);
+                startActivity(abt);
+                break;
             case R.id.nav_logout_sy:
                 Intent logout=new Intent(NavigationSY.this,LogoutSY.class);
                 startActivity(logout);
+                break;
 
 
 
