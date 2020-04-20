@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logooo"
+        android:icon="@mipmap/ic_launcher"
         android:label="LEARN FORWARD"
-        android:roundIcon="@drawable/logooo"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".aboutus"></activity>

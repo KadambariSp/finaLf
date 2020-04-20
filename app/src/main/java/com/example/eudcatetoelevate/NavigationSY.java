@@ -60,9 +60,10 @@ public class NavigationSY extends AppCompatActivity implements NavigationView.On
         mostImpFyRecyclerViewSy.setHasFixedSize(true);
         mostImpFyRecyclerViewSy.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<MostImpHelperClassSy> mostImpSyLocations = new ArrayList<>();
-        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.sqlsy, "Structured Query Language", "Let's learn interesting about RDBMS in this year"));
-        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.cn, "Computer Networks", "Networking skills are also important and this subject is Base for that"));
-        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.vb, "Visual Basics", "The most creative and simple subject yet techy! Ohh yes now you can create web applications by learning this subject"));
+        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.intern, "WHY INTERNSHIPS ARE SO IMPORTANT NOWADAYS?", " you already knows that there is so many competition all Around and you must have to improve your knowledge not by just reading books ! Try to learn everything Practically "));
+        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.companyexperience, "Company Experiences", " You must have some kind of experience about what's happening in corporate world , what are the leading languages , technologies and many other Things"));
+        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.internshipsyfinal, "Details about it", "You have to do one month internship in any technical institute/firm on any filed related topic"));
+        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.internshipsy2final, "what will you get??", "By doing this you will get certificates which are valuable also with corporate experiences"));
         adapterMostImpSy = new MostImpAdapterSy(mostImpSyLocations);
         mostImpFyRecyclerViewSy.setAdapter(adapterMostImpSy);
     }
@@ -71,10 +72,10 @@ public class NavigationSY extends AppCompatActivity implements NavigationView.On
         codingRecyclerViewSy.setHasFixedSize(true);
         codingRecyclerViewSy.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<CodingHelperClassSy> codingSyLocations = new ArrayList<>();
-        codingSyLocations.add(new CodingHelperClassSy(R.drawable.basics, "WHY INTERNSHIPS ARE SO IMPORTANT NOWADAYS?", "you already knows that there is so many competition all Around and you must have to improve your knowledge not by just reading books ! Try to learn everything Practically "));
-        codingSyLocations.add(new CodingHelperClassSy(R.drawable.clang, "Company Experiences", "You must have some kind of experience about what's happening in corporate world , what are the leading languages , technologies and many other Things"));
-        codingSyLocations.add(new CodingHelperClassSy(R.drawable.csy, "Details about it", "You have to do one month internship in any technical institute/firm on any filed related topic"));
-        codingSyLocations.add(new CodingHelperClassSy(R.drawable.htmllang1, "What will you get?", "By doing this you will get certificates which are valuable also with corporate experiences"));
+        codingSyLocations.add(new CodingHelperClassSy(R.drawable.pdbmsfinal, "SQL", "Let's learn interesting about RDBMS in this year"));
+        codingSyLocations.add(new CodingHelperClassSy(R.drawable.chmsyfinal, "Computer Networks and hardware Maintenance", " Networking skills are also important and this subject is Base for that"));
+        codingSyLocations.add(new CodingHelperClassSy(R.drawable.visualstudiofinal, "Visual Basics", " The most creative and simple subject yet techy! Ohh yes now you can create web applications by learning this subject"));
+        codingSyLocations.add(new CodingHelperClassSy(R.drawable.oopsyfinal, "", "C++ , advanced version of c Language and base for object oriented programming!"));
         adapterSy = new CodingAdapterSy(codingSyLocations);
         codingRecyclerViewSy.setAdapter(adapterSy);
     }

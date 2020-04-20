@@ -59,9 +59,9 @@ public class NavigationTY extends AppCompatActivity implements NavigationView.On
         mostImpFyRecyclerViewTY.setHasFixedSize(true);
         mostImpFyRecyclerViewTY.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<MostImphelperClassTy> mostImpTyLocations = new ArrayList<>();
-        mostImpTyLocations.add(new MostImphelperClassTy(R.drawable.project, "Topic Selection", "You first need to research on every topics that you are comfortable with also , the project should not be repeated and copied from Net !!"));
-        mostImpTyLocations.add(new MostImphelperClassTy(R.drawable.library1, "Group Members Participation is Must ", "Everyone who is in your team should have maximum participation and Involvement!"));
-        mostImpTyLocations.add(new MostImphelperClassTy(R.drawable.coder, "Project FLow", "Never think that you can do Project in one week or month , you have to start it from your Fifth Sem beacuse the last semester is too small to do whole project"));
+        mostImpTyLocations.add(new MostImphelperClassTy(R.drawable.projectnext, "Topic Selection", "You first need to research on every topics that you are comfortable with also , the project should not be repeated and copied from Net !!"));
+        mostImpTyLocations.add(new MostImphelperClassTy(R.drawable.teamproject, "Group Members Participation is Must ", "Everyone who is in your team should have maximum participation and Involvement!"));
+        mostImpTyLocations.add(new MostImphelperClassTy(R.drawable.documentation, "Project Flow", "Never think that you can do Project in one week or month , you have to start it from your Fifth Sem beacuse the last semester is too small to do whole project"));
         adapterMostImpTy = new MostImpAdapterTy(mostImpTyLocations);
         mostImpFyRecyclerViewTY.setAdapter(adapterMostImpTy);
 
