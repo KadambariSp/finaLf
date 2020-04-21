@@ -60,7 +60,7 @@ public class NavigationTY extends AppCompatActivity implements NavigationView.On
         mostImpFyRecyclerViewTY.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<MostImphelperClassTy> mostImpTyLocations = new ArrayList<>();
         mostImpTyLocations.add(new MostImphelperClassTy(R.drawable.projectnext, "Topic Selection", "You first need to research on every topics that you are comfortable with also , the project should not be repeated and copied from Net !!"));
-        mostImpTyLocations.add(new MostImphelperClassTy(R.drawable.teamproject, "Group Members Participation is Must ", "Everyone who is in your team should have maximum participation and Involvement!"));
+        mostImpTyLocations.add(new MostImphelperClassTy(R.drawable.teamproject, "Group Member's Participation is Must ", "Everyone who is in your team should have maximum participation and Involvement!"));
         mostImpTyLocations.add(new MostImphelperClassTy(R.drawable.documentation, "Project Flow", "Never think that you can do Project in one week or month , you have to start it from your Fifth Sem beacuse the last semester is too small to do whole project"));
         adapterMostImpTy = new MostImpAdapterTy(mostImpTyLocations);
         mostImpFyRecyclerViewTY.setAdapter(adapterMostImpTy);
@@ -71,10 +71,10 @@ public class NavigationTY extends AppCompatActivity implements NavigationView.On
         codingRecyclerViewTY.setHasFixedSize(true);
         codingRecyclerViewTY.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<CodingTyHelperClass> codingTyLocations = new ArrayList<>();
-        codingTyLocations.add(new CodingTyHelperClass(R.drawable.security, "Computer Security", "As you know to Learn Anything you first have to clear it's base so just Do it!"));
-        codingTyLocations.add(new CodingTyHelperClass(R.drawable.project, "Advanced Java", "Assembly Language is powerful yet difficult , So c comes into picture!!"));
-        codingTyLocations.add(new CodingTyHelperClass(R.drawable.csy, "vbdc", "C++ Object oriented Programming it is Advanced Version Of C !"));
-        codingTyLocations.add(new CodingTyHelperClass(R.drawable.htmllang1, "HTML", "Web Development is huge place for one who loves to do creative yet techy things !"));
+        codingTyLocations.add(new CodingTyHelperClass(R.drawable.security, "Computer Security", "Learn more about cyber crimes , Viruses , Ethical Hacking , zigbee and many more!!"));
+        codingTyLocations.add(new CodingTyHelperClass(R.drawable.advancedjava, "Advanced Java", "As you already have a little bit knowledge about java as you have studied it in last year , in this year you can create web applications using JSP"));
+        codingTyLocations.add(new CodingTyHelperClass(R.drawable.phplogo, " php", "More advanced form of creating server side and Dynamic Web Pages!!"));
+        codingTyLocations.add(new CodingTyHelperClass(R.drawable.mongodb, "MONGODB", "Let's Study about some NOSQL databases in this semester!!"));
         adapterTy = new CodingAdapterTy(codingTyLocations);
         codingRecyclerViewTY.setAdapter(adapterTy);
 

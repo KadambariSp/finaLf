@@ -102,7 +102,7 @@ public class NavigationSY extends AppCompatActivity implements NavigationView.On
     }
 
     private void animateNavigationDrawer() {
-        drawerLayout.setScrimColor(getResources().getColor(R.color.color2));
+        drawerLayout.setBackgroundDrawable(getResources().getDrawable(R.drawable.student1));
         drawerLayout.addDrawerListener(new DrawerLayout.SimpleDrawerListener() {
             @Override
             public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
@@ -144,18 +144,17 @@ public class NavigationSY extends AppCompatActivity implements NavigationView.On
                 startActivity(i1);
                 break;
             case R.id.nav_explore_sy:
-                Intent i4 = new Intent(NavigationSY.this,swipesy.class);
+                Intent i4 = new Intent(NavigationSY.this, swipesy.class);
                 startActivity(i4);
                 break;
             case R.id.nav_aboutus_sy:
-                Intent abt=new Intent(NavigationSY.this,aboutus.class);
+                Intent abt = new Intent(NavigationSY.this, aboutus.class);
                 startActivity(abt);
                 break;
             case R.id.nav_logout_sy:
-                Intent logout=new Intent(NavigationSY.this,LogoutSY.class);
+                Intent logout = new Intent(NavigationSY.this, LogoutSY.class);
                 startActivity(logout);
                 break;
-
 
 
         }

@@ -59,10 +59,8 @@ NavigationTeachers extends AppCompatActivity implements NavigationView.OnNavigat
         mostImpFyRecyclerViewTeachers.setHasFixedSize(true);
         mostImpFyRecyclerViewTeachers.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<MostImpHelperClassTeacher> mostImpTeacherLocations = new ArrayList<>();
-        mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.spinner, "Substitute for College Website", "xyz"));
-        mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.coder, "", "vcdx"));
-        mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.project, "xsza", "cxsz"));
-        mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.androidty, "XZA", "sa"));
+        mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.spinner, "Substitute for College Website", "As you know we already have a website of our whole institute but it's no sufficient also , website might cause server-down issues that's the reason behind this project!!"));
+        mostImpTeacherLocations.add(new MostImpHelperClassTeacher(R.drawable.coder, "Parent will be notified every time ", "Many students especially hostel students , don't tell their parents about detention list or may be Backlogs so our application will help to solve this issue parents will be notified in case of PTM , or detention of their children"));
         adapterMostImpTeachers = new MostImpAdapterTeachers(mostImpTeacherLocations);
         mostImpFyRecyclerViewTeachers.setAdapter(adapterMostImpTeachers);
 

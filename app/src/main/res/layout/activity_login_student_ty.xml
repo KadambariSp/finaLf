@@ -10,6 +10,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFF"
+            android:padding="20dp"
             tools:context=".LoginStudentTy">
 
                 <Button
@@ -77,7 +78,8 @@
                     android:layout_height="162dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="40dp"
-                    android:src="@drawable/group1"
+                    android:src="@drawable/studfinal"
+                    android:scaleType="fitStart"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.296"

@@ -51,6 +51,7 @@
             android:background="@drawable/etbg"
             android:fontFamily="@font/montserratmedium"
             android:hint="Password"
+            android:inputType="textPassword"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textColorHint="@color/colorPrimary" />
@@ -62,6 +63,7 @@
             android:layout_below="@id/etPasswordParent"
             android:layout_marginTop="30dp"
             android:background="@drawable/etbg"
+            android:inputType="textPassword"
             android:fontFamily="@font/montserratmedium"
             android:hint="Confirm Password"
             android:textAlignment="center"
