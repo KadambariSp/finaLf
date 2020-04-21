@@ -1,166 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF"
-    tools:context=".RegisterStudentSy">
-    <Button
-        android:id="@+id/buttonRegisterStudentSy"
-        android:layout_width="130dp"
-        android:layout_height="55dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+    android:background="#FFF">
 
-        android:layout_marginBottom="64dp"
-        android:background="@drawable/buttonbg"
-        android:elevation="10dp"
-        android:fontFamily="@font/montserratmedium"
-        android:shadowColor="#d3d3d3"
-        android:text="Register"
-        android:textColor="#FFF"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etConfirmUsernameSy"
-        app:layout_constraintVertical_bias="0.975" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:padding="20dp"
+        tools:context=".RegisterStudentSy">
 
-    <EditText
-        android:id="@+id/etUsernameSy"
-        android:layout_width="326dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/etbg"
-        android:elevation="3dp"
-        android:fontFamily="@font/montserratmedium"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.044" />
+        <Button
+            android:id="@+id/buttonRegisterStudentSy"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/etConfirmPasswordSy"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/buttonbg"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Register Yourself"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/etConfirmPasswordSy"
-        android:layout_width="326dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/etbg"
-        android:elevation="3dp"
-        android:fontFamily="@font/montserratmedium"
-        android:hint="confirm password"
-        android:inputType="textPassword"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/progressBarSy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPasswordSy"
-        app:layout_constraintVertical_bias="0.538" />
+        <EditText
+            android:id="@+id/etConfirmUsernameSy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/etUsernameSy"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/etbg"
+            android:fontFamily="@font/montserratmedium"
+            android:hint="Confirm Username"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
 
-    <EditText
-        android:id="@+id/etConfirmUsernameSy"
-        android:layout_width="326dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/etbg"
-        android:elevation="3dp"
-        android:fontFamily="@font/montserratmedium"
-        android:hint="Confirm Username"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etPasswordSy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUsernameSy"
-        app:layout_constraintVertical_bias="0.379" />
+        <EditText
+            android:id="@+id/etPasswordSy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/etConfirmUsernameSy"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/etbg"
+            android:fontFamily="@font/montserratmedium"
+            android:hint="Password"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
 
-    <EditText
-        android:id="@+id/etPasswordSy"
-        android:layout_width="326dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/etbg"
-        android:elevation="3dp"
-        android:fontFamily="@font/montserratmedium"
-        android:hint="password"
-        android:inputType="textPassword"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.362" />
+        <EditText
+            android:id="@+id/etConfirmPasswordSy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/etPasswordSy"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/etbg"
+            android:fontFamily="@font/montserratmedium"
+            android:hint="Confirm Password"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="327dp"
-        android:layout_height="218dp"
+        <EditText
+            android:id="@+id/etUsernameSy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/welcomeLine"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/etbg"
+            android:fontFamily="@font/montserratmedium"
+            android:hint="Username"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
 
+            />
 
-        android:src="@drawable/dribbble"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.117" />
+        <ProgressBar
+            android:id="@+id/progressBarSy"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonRegisterStudentSy"
+            android:layout_marginTop="30dp"
+            android:visibility="gone" />
 
-    <ProgressBar
+        <TextView
+            android:id="@+id/SignInSy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBarSy"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Already Registered ? \n Login here "
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-        android:id="@+id/progressBarSy"
-        style="@style/Widget.AppCompat.ProgressBar"
-        android:layout_width="326dp"
-        android:layout_height="20dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/buttonRegisterStudentSy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etConfirmPasswordSy" />
+        <TextView
+            android:id="@+id/welcomeLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/regLogo"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/fredoka"
+            android:text="Welcome User , Register Yourself to Explore Features"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/SignInSy"
-        android:layout_width="307dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="Registered? SignIn here"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:fontFamily="@font/montserratregular"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.596"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRegisterStudentSy"
-        app:layout_constraintVertical_bias="0.628" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/regLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="157dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="131dp"
+            android:layout_marginRight="100dp"
+            android:elevation="5dp"
+            android:src="@drawable/studfinal"
+            app:civ_border_color="#000"
+            app:civ_border_width="3dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

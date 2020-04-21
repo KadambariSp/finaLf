@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFF"
+        android:padding="20dp"
         tools:context=".RegisterParent">
 
         <Button
@@ -119,17 +120,18 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/regLogo"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="157dp"
+            android:scaleType="centerCrop"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="130dp"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="131dp"
             android:layout_marginRight="100dp"
             android:elevation="5dp"
-            android:src="@drawable/dribbble"
+            android:src="@drawable/parentsfinal"
             app:civ_border_color="#000"
             app:civ_border_width="3dp" />
 
