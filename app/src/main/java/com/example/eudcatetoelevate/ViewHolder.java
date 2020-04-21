@@ -8,10 +8,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
     View mView;
+
     public ViewHolder(@NonNull View itemView) {
         super(itemView);
         mView = itemView;
@@ -30,21 +33,28 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         });
     }
 
-    public void setDetails(Context ctx , String title, String description , String image){
-        TextView mTitleTv=mView.findViewById(R.id.rTitleTv);
-        TextView mDetailTv=mView.findViewById(R.id.rDescriptionTv);
-        ImageView mImageIv=mView.findViewById(R.id.rImageView);
+    public void setDetails(Context ctx, String title, String description, final String image) {
+        TextView mTitleTv = mView.findViewById(R.id.rTitleTv);
+        TextView mDetailTv = mView.findViewById(R.id.rDescriptionTv);
+        final ImageView mImageIv = mView.findViewById(R.id.rImageView);
         mTitleTv.setText(title);
         mDetailTv.setText(description);
         Picasso.get().load(image).into(mImageIv);
 
 
 
+
     }
+
     private ViewHolder.ClickListener mClickListener;
-    public  interface ClickListener{
+
+    public interface ClickListener {
         void onItemClick(View view, int position);
+
         void onItemlongClick(View view, int position);
     }
-    public void setOnClickListener(ViewHolder.ClickListener clickListener){
-        mClickListener = clickListener;}}
+
+    public void setOnClickListener(ViewHolder.ClickListener clickListener) {
+        mClickListener = clickListener;
+    }
+}
