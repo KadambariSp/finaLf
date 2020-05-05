@@ -19,13 +19,13 @@ public class swipefy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swipefy);
         modelfy = new ArrayList<>();
-        modelfy.add(new Modelfy(R.drawable.curiifinal, "Curriculum", ""));
-        modelfy.add(new Modelfy(R.drawable.academiccal, "Academic Calendar", ""));
-        modelfy.add(new Modelfy(R.drawable.finalno, "Notice", ""));
-        modelfy.add(new Modelfy(R.drawable.dlist, "Question Papers", ""));
-        modelfy.add(new Modelfy(R.drawable.marksss, "Text Notice", ""));
-        modelfy.add(new Modelfy(R.drawable.coesa, "Pdf Notice", ""));
-        modelfy.add(new Modelfy(R.drawable.coesa, "Other Activities", ""));
+        modelfy.add(new Modelfy(R.drawable.curiifinal, "Curriculum", "Curriculum for First Year Both shifts"));
+        modelfy.add(new Modelfy(R.drawable.academiccal, "Academic Calendar", "Academic Calender for All academical activities , exam schedules , PTM and many more!"));
+        modelfy.add(new Modelfy(R.drawable.finalno, "Notice", "Notices in the Form of Images"));
+        modelfy.add(new Modelfy(R.drawable.dlist, "Question Papers", "Set of Question papers to solve ! Just for your practice"));
+        modelfy.add(new Modelfy(R.drawable.marksss, "Text Notice", "Small form of Notices , (Text Format)"));
+        modelfy.add(new Modelfy(R.drawable.softwareengineer, "Pdf Notice", "Notices in the form of PDFs like updated timetable for exam , any Cirular etc"));
+        modelfy.add(new Modelfy(R.drawable.coesa, "Other Activities", "Includes COESA forms"));
 
 
         adapterfy = new Adapterfy(modelfy, this);

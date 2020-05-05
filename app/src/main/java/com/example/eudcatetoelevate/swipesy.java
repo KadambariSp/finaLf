@@ -20,13 +20,13 @@ public class swipesy extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swipesy);
         modelsy = new ArrayList<>();
-        modelsy.add(new Modelsy(R.drawable.curiifinal, "Curriculum", ""));
-        modelsy.add(new Modelsy(R.drawable.academiccal, "Academic Calendar", ""));
-        modelsy.add(new Modelsy(R.drawable.finalno, "Notice", ""));
-        modelsy.add(new Modelsy(R.drawable.dlist, "Question Paper", ""));
-        modelsy.add(new Modelsy(R.drawable.marksss, "Text Notice", ""));
-        modelsy.add(new Modelsy(R.drawable.coesa, "Pdf Notice", ""));
-        modelsy.add(new Modelsy(R.drawable.coesa, "Other Activities", ""));
+        modelsy.add(new Modelsy(R.drawable.curiifinal, "Curriculum", "Curriculum for Second Year Both shifts"));
+        modelsy.add(new Modelsy(R.drawable.academiccal, "Academic Calendar", "Academic Calender for All academical activities , exam schedules , PTM and many more!"));
+        modelsy.add(new Modelsy(R.drawable.finalno, "Notice", "Notices in the Form of Images"));
+        modelsy.add(new Modelsy(R.drawable.dlist, "Question Paper", "Set of Question papers to solve ! Just for your practice"));
+        modelsy.add(new Modelsy(R.drawable.marksss, "Text Notice", "Small form of Notices , (Text Format)"));
+        modelsy.add(new Modelsy(R.drawable.softwareengineer, "Pdf Notice", "Notices in the form of PDFs like updated timetable for exam , any Cirular etc"));
+        modelsy.add(new Modelsy(R.drawable.coesa, "Other Activities", "Includes COESA forms"));
         adaptersy = new Adaptersy(modelsy, this);
 
         viewPager2 = findViewById(R.id.viewPager2);

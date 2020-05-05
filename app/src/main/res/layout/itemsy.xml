@@ -47,7 +47,7 @@
                 android:drawablePadding="10dp"
                 android:ellipsize="end"
                 android:text="Description"
-                android:textStyle="italic"
+                android:textStyle="normal"
                 android:fontFamily="@font/montserratregular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

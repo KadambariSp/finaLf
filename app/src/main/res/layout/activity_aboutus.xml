@@ -7,7 +7,7 @@
     >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#FFF"
         tools:context=".aboutus">
 
@@ -33,7 +33,7 @@
             android:id="@+id/aboutus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="100dp"
             android:fontFamily="@font/montserratregular"
             android:padding="20dp"
@@ -43,10 +43,10 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.207"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.911" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/dev"
@@ -72,6 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
+            android:id="@+id/names"
             android:fontFamily="@font/montserratmedium"
             android:text="Kadambari Patangrao \n Bhagyashree Narwade \n Kajal Gomle \n Sarika Shete"
             android:textAlignment="center"
@@ -83,6 +84,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dev"
             app:layout_constraintVertical_bias="0.26" />
+
+        <TextView
+            android:layout_width="1112dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="200dp"
+
+            android:fontFamily="@font/montserratmedium"
+            android:text="We would love to give credits to 'unDraw' plugin of 'Adobe xd' and also 'icons8' for providing free icons and illustrations ! \n Credits : \n unDraw plugin by Adobe Xd - https://undraw.co \n Icons8 - https://icons8.com  "
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dev"
+            app:layout_constraintVertical_bias="0.91" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
