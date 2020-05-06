@@ -12,7 +12,7 @@ public class sixth1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+
         setContentView(R.layout.activity_sixth1);
         pdfsixth=(PDFView)findViewById(R.id.pdfsixth);
         pdfsixth.fromAsset("6sem.pdf").load();

@@ -13,7 +13,7 @@ public class currisy extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+
         setContentView(R.layout.activity_currisy);
         three=(Button)findViewById(R.id.three);
         four=(Button)findViewById(R.id.four);

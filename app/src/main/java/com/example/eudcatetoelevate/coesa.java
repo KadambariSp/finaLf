@@ -14,7 +14,7 @@ public class coesa extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coesa);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+
         setContentView(R.layout.activity_coesa);
         primaryitem=(LinearLayout)findViewById(R.id.primaryitem);
         primaryitem.setOnClickListener(new View.OnClickListener() {

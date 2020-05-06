@@ -12,7 +12,7 @@ public class hop extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+
         setContentView(R.layout.activity_hop);
         text4=(TextView)findViewById(R.id.text4);
         text4.setMovementMethod(LinkMovementMethod.getInstance());

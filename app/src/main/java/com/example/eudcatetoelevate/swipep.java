@@ -22,9 +22,9 @@ public class swipep extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swipep);
         modelp = new ArrayList<>();
-        modelp.add(new Modelp(R.drawable.finalno, "Notice", "All Notices regarding Your Children's Education Most Important PARENT TEACHER MEETINGS"));
-        modelp.add(new Modelp(R.drawable.dlist, "Detention List", "TO CHECK WHETHER YOUR CHILD ATTEND EACH AND EVERY LECTURE OR NOT?"));
-        modelp.add(new Modelp(R.drawable.marksss,"Marks","EDUCATIONAL GROWTH OF YOUR CHILDREN"));
+        modelp.add(new Modelp(R.drawable.finalno, "Notice", "All Notices regarding Your Children's Education Most Important PARENT TEACHER MEETINGS and TO CHECK WHETHER YOUR CHILD ATTEND EACH AND EVERY LECTURE OR NOT?"));
+        modelp.add(new Modelp(R.drawable.academiccal, "Academic Calender", "Academical Activities!"));
+
         adapterp = new Adapterp(modelp, this);
 
         viewPager4 = findViewById(R.id.viewPager4);

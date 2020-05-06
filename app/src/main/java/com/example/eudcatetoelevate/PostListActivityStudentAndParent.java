@@ -38,7 +38,7 @@ public class PostListActivityStudentAndParent extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_list_student_and_parent);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+
         setContentView(R.layout.activity_post_list_student_and_parent);
         ActionBar actionBar1=getSupportActionBar();
         actionBar1.setTitle("Notice");

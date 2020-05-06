@@ -62,6 +62,7 @@ public class Adapterp extends PagerAdapter {
                     contextp.startActivity(i);
                 }
 
+
             }
         });
 

@@ -12,7 +12,7 @@ public class sec extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+
         setContentView(R.layout.activity_sec);
         text3=(TextView)findViewById(R.id.text3);
         text3.setMovementMethod(LinkMovementMethod.getInstance());

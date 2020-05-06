@@ -12,7 +12,7 @@ public class acapdf extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+
         setContentView(R.layout.activity_acapdf);
         acabtn=(Button)findViewById(R.id.acabtn);
         acabtn.setOnClickListener(new View.OnClickListener() {

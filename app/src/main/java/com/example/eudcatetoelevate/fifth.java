@@ -12,7 +12,7 @@ public class fifth extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,WindowManager.LayoutParams.FLAG_SECURE);
+
         setContentView(R.layout.activity_fifth);
         pdffifth=(PDFView)findViewById(R.id.pdffifth);
         pdffifth.fromAsset("5sem.pdf").load();
