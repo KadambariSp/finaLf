@@ -1,89 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFF"
-    tools:context=".teacheruploadcurriculum">
-
-    <Button
-        android:id="@+id/currify"
-        android:layout_width="226dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="140dp"
-        android:background="@drawable/buttonbg"
-        android:fontFamily="@font/montserratmedium"
-        android:text="Upload to First Year"
-        android:textAlignment="center"
-        android:textColor="#FFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
-
-    <Button
-        android:id="@+id/currisy"
-        android:layout_width="226dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="160dp"
-        android:background="@drawable/buttonbg"
-        android:fontFamily="@font/montserratmedium"
-        android:text="Upload to Second Year"
-        android:textAlignment="center"
-        android:textColor="#FFF"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.777" />
-
-    <Button
-        android:id="@+id/currity"
-        android:layout_width="226dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/buttonbg"
-        android:fontFamily="@font/montserratmedium"
-        android:text="Upload to Third Year"
-        android:textAlignment="center"
-        android:textColor="#FFF"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
-
-    <ImageView
-        android:layout_width="216dp"
-        android:layout_height="185dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="135dp"
-        android:src="@drawable/curiifinal"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
+    android:layout_height="match_parent">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+        <ImageView
+            android:id="@+id/imageee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/pdf" />
+
+        <TextView
+            android:id="@+id/choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageee"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="Choose Year for Uploading..."
+            android:textColor="#000"
+            android:fontFamily="@font/fredoka"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginEnd="0dp" />
+
+        <Button
+            android:id="@+id/currify"
+            android:background="@drawable/buttonbg"
+            android:text="Upload to First Year"
+            android:fontFamily="@font/montserratmedium"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/choose"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/currisy"
+            android:background="@drawable/buttonbg"
+            android:text="Upload to Second Year"
+            android:fontFamily="@font/montserratmedium"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/currify"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/currity"
+            android:background="@drawable/buttonbg"
+            android:text="Upload to Third Year"
+            android:fontFamily="@font/montserratmedium"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/currisy"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</ScrollView>

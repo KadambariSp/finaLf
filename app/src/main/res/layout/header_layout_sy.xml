@@ -31,12 +31,14 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_above="@id/app_name"
-        android:src="@drawable/logoapp"/>
+        android:src="@drawable/logooo"/>
     <ImageView
-        android:layout_width="160dp"
-        android:layout_height="175dp"
-        android:src="@drawable/studfinal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/forward"
         android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

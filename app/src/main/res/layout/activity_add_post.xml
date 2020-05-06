@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#FFF"
     android:layout_height="match_parent"
     tools:context=".AddPostActivity">
 
@@ -25,9 +26,10 @@
         <ImageView
             android:layout_marginTop="20dp"
             android:id="@+id/pImageIv"
+            android:background="#FFF"
             android:layout_width="match_parent"
             android:layout_height="210dp"
-            android:src="@drawable/addpost"
+            android:src="@drawable/uploadphoto"
             />
         <EditText
             android:layout_marginTop="20dp"

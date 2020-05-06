@@ -52,7 +52,7 @@
 
     <Button
         android:id="@+id/btn_uploadcurrify"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
@@ -66,7 +66,7 @@
         android:text="Upload Curriculum(first year)"
         android:textAllCaps="false"
         android:textColor="#FFF"
-        android:textSize="20sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

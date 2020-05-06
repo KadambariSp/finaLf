@@ -61,8 +61,8 @@ public class NavigationSY extends AppCompatActivity implements NavigationView.On
         mostImpFyRecyclerViewSy.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         ArrayList<MostImpHelperClassSy> mostImpSyLocations = new ArrayList<>();
         mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.internshipppppppppppppp, "WHY INTERNSHIPS ARE SO IMPORTANT NOWADAYS?", " you already knows that there is so many competition all Around and you must have to improve your knowledge not by just reading books ! Try to learn everything Practically "));
-        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.company, "Company Experiences", " You must have some kind of experience about what's happening in corporate world , what are the leading languages , technologies and many other Things"));
-        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.internshipsyfinal, "Details about it", "You have to do one month internship in any technical institute/firm on any filed related topic"));
+        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.cm, "Company Experiences", " You must have some kind of experience about what's happening in corporate world , what are the leading languages , technologies and many other Things"));
+        mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.company, "Details about it", "You have to do one month internship in any technical institute/firm on any filed related topic"));
         mostImpSyLocations.add(new MostImpHelperClassSy(R.drawable.certi, "what will you get??", "By doing this you will get certificates which are valuable also with corporate experiences"));
         adapterMostImpSy = new MostImpAdapterSy(mostImpSyLocations);
         mostImpFyRecyclerViewSy.setAdapter(adapterMostImpSy);
