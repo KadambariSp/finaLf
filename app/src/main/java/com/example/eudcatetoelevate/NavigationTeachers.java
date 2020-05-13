@@ -1,19 +1,23 @@
 package com.example.eudcatetoelevate;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.eudcatetoelevate.HelperClasses.HomeAdapter.CodingAdapterFy;
 import com.example.eudcatetoelevate.HelperClasses.HomeAdapter.CodingAdapterTeachers;
@@ -21,9 +25,21 @@ import com.example.eudcatetoelevate.HelperClasses.HomeAdapter.CodingFyHelperClas
 import com.example.eudcatetoelevate.HelperClasses.HomeAdapter.CodingTeacherHelperClass;
 import com.example.eudcatetoelevate.HelperClasses.HomeAdapter.MostImpAdapterTeachers;
 import com.example.eudcatetoelevate.HelperClasses.HomeAdapter.MostImpHelperClassTeacher;
+import com.example.eudcatetoelevate.Model.MobileNumbersTeacher;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import dmax.dialog.SpotsDialog;
 
 public class
 NavigationTeachers extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -146,9 +162,10 @@ NavigationTeachers extends AppCompatActivity implements NavigationView.OnNavigat
                 Intent logout_t = new Intent(NavigationTeachers.this, LogoutTeacher.class);
                 startActivity(logout_t);
                 break;
-
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }

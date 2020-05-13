@@ -67,13 +67,12 @@ public class listcurrity extends AppCompatActivity {
                 for(int i=0;i<uploads.length;i++){
                     uploads[i]=uploadPDFS.get(i).getName();
                 }
-                ArrayAdapter<String> adapter= new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,uploads){
+                ArrayAdapter<String> adapter= new ArrayAdapter<String>(getApplicationContext(),R.layout.listtv,uploads){
                     @NonNull
                     @Override
                     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
                         View view=super.getView(position,convertView,parent);
-                        TextView myText=(TextView) view.findViewById(android.R.id.text1);
-                        myText.setTextColor(Color.BLACK);
+
                         return view;
                     }
                 };

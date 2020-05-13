@@ -20,6 +20,8 @@
         android:layout_marginBottom="140dp"
         android:background="@drawable/buttonbg"
         android:elevation="10dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
         android:fontFamily="@font/montserratmedium"
         android:text="Upload Curriculum(Second year)"
         android:textAllCaps="false"

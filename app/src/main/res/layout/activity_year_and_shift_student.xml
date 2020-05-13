@@ -21,6 +21,8 @@
             android:padding="20dp"
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginEnd="60dp"
+            android:textAlignment="center"
+            android:textDirection="ltr"
             app:expandedTitleMarginStart="20dp"
             app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Headline"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"

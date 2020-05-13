@@ -86,8 +86,8 @@
             app:layout_constraintVertical_bias="0.26" />
 
         <TextView
-            android:layout_width="1112dp"
-            android:layout_height="108dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="200dp"
 
             android:fontFamily="@font/montserratmedium"

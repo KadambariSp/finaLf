@@ -135,7 +135,7 @@ public class NavigationTY extends AppCompatActivity implements NavigationView.On
                 Intent i = new Intent(NavigationTY.this, PanelSelection.class);
                 startActivity(i);
                 break;
-            case R.id.nav_explore_fy:
+            case R.id.nav_explore_ty:
                 Intent ie = new Intent(NavigationTY.this, swipety.class);
                 startActivity(ie);
                 break;

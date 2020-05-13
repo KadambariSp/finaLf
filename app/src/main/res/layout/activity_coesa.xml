@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
     android:orientation="vertical"
     tools:context=".coesa">
 
     <LinearLayout
+        android:elevation="10dp"
+        android:layout_marginTop="40dp"
         android:id="@+id/primaryitem"
+        android:background="@drawable/coesabg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
@@ -32,9 +38,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratmedium"
+                android:fontFamily="@font/fredoka"
                 android:text="PRESIDENT"
-                android:textColor="#000000"
+                android:textColor="#FFF"
                 android:textSize="18sp" />
 
             <TextView
@@ -42,17 +48,21 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratmedium"
                 android:text="FOR THIRD YEAR STUDENTS"
-                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textColor="#000"
                 android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
+        android:elevation="10dp"
         android:id="@+id/secondaryitem"
         android:layout_width="match_parent"
+        android:background="@drawable/coesabgone"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="24dp"
         android:orientation="horizontal"
         android:padding="12dp"
@@ -63,7 +73,6 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/sec"
-
             tools:ignore="ContentDescription" />
 
         <LinearLayout
@@ -77,7 +86,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratmedium"
+                android:fontFamily="@font/fredoka"
                 android:text="SECREATARY"
                 android:textColor="#000000"
                 android:textSize="18sp" />
@@ -87,18 +96,21 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratmedium"
                 android:text="FOR SECOND YEAR STUDENT"
-                android:textColor="#000000"
+                android:textColor="@color/colorPrimary"
                 android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
+        android:elevation="10dp"
         android:id="@+id/thirditem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
+        android:background="@drawable/coesabgone"
         android:layout_marginBottom="24dp"
+        android:layout_marginTop="60dp"
         android:orientation="horizontal"
         android:padding="12dp"
 
@@ -119,9 +131,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratmedium"
+                android:fontFamily="@font/fredoka"
                 android:text="HEAD OF PANEL"
-                android:textColor="#000000"
+                android:textColor="#FFF"
                 android:textSize="18sp" />
 
             <TextView
@@ -129,19 +141,23 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratmedium"
                 android:text="FOR FIRST YEAR STUDENT"
-                android:textColor="#000000"
+                android:textColor="#000"
+                android:textStyle="bold"
                 android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
+        android:elevation="10dp"
         android:id="@+id/fouritem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
+        android:background="@drawable/coesabg"
         android:layout_marginBottom="24dp"
         android:orientation="horizontal"
+        android:layout_marginTop="70dp"
         android:padding="12dp">
 
         <ImageView
@@ -160,7 +176,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:baselineAligned="false"
-                android:fontFamily="@font/montserratmedium"
+                android:fontFamily="@font/fredoka"
                 android:text="TECHNICAL HEAD"
                 android:textColor="#000000"
                 android:textSize="18sp" />
@@ -170,19 +186,22 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratmedium"
                 android:text="FOR SECOND YEAR STUDENT"
-                android:textColor="#000000"
+                android:textColor="@color/colorPrimary"
                 android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/fiveitem"
+        android:elevation="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/evecoesa"
         android:orientation="horizontal"
+        android:layout_marginTop="80dp"
         android:padding="12dp">
 
         <ImageView
@@ -200,17 +219,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratmedium"
+                android:fontFamily="@font/fredoka"
                 android:text="EVENT MANAGER"
-                android:textColor="#000000"
+                android:textColor="#FFF"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratmedium"
+                android:textStyle="bold"
+
                 android:text="FOR THIRD YEAR STUDENT"
-                android:textColor="#000000"
+                android:textColor="#000"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -219,3 +240,4 @@
     </LinearLayout>
 
 </LinearLayout>
+</ScrollView>
