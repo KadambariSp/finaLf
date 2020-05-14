@@ -22,8 +22,7 @@ public class swipeteacher extends AppCompatActivity {
         models = new ArrayList<>();
         models.add(new ModelT(R.drawable.finalno, "Image Notice", "Notices in the Form of Images"));
         models.add(new ModelT(R.drawable.academiccal, "Academic Calendar", "Academic Calender for All academical activities , exam schedules , PTM and many more!"));
-        models.add(new ModelT(R.drawable.curiifinal, "Curriculum", "Syllabus"));
-        models.add(new ModelT(R.drawable.dlist, "Text Notice", "Small form of Notices , (Text Format)\""));
+        models.add(new ModelT(R.drawable.dlist, "Text Notice", "Small form of Notices , (Text Format)"));
         models.add(new ModelT(R.drawable.marksss, "Pdf Notice", "Notices in the form of PDFs like updated timetable for exam , any Cirular etc"));
 
         adapter = new Adapter(models, this);

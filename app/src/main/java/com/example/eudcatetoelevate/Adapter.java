@@ -63,16 +63,13 @@ public class Adapter extends PagerAdapter {
                     Intent intent = new Intent(context,acapdf.class);
                     context.startActivity(intent);
                 }
-                else  if (position==2){
-                    Intent intent = new Intent(context,teacheruploadcurriculum.class);
-                    context.startActivity(intent);
-                }
 
-                else if(position==3){
+
+                else if(position==2){
                     Intent intent=new Intent(context,AddTextPostActivityTeachers.class);
                     context.startActivity(intent);
                 }
-                else if(position==4){
+                else if(position==3){
                     Intent intent= new Intent(context,teacheruploadcurriculum.class);
                     context.startActivity(intent);
                 }

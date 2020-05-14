@@ -132,23 +132,23 @@ public class NavigationFY extends AppCompatActivity implements NavigationView.On
                 Intent i = new Intent(NavigationFY.this, PanelSelection.class);
                 startActivity(i);
                 break;
-            case R.id.nav_profile_fy:
-                Intent i2 = new Intent(NavigationFY.this, ProfileActivityStudentFY.class);
+            case R.id.nav_explore_fy:
+                Intent i2 = new Intent(NavigationFY.this, swipefy.class);
                 startActivity(i2);
                 break;
-            case R.id.nav_account_fy:
-                Intent i3 = new Intent(NavigationFY.this, ViewProfileStudentFY.class);
+            case R.id.nav_aboutus_fy:
+                Intent i3 = new Intent(NavigationFY.this, aboutus.class);
                 startActivity(i3);
-            case R.id.nav_explore_fy:
-                Intent ie = new Intent(NavigationFY.this, swipefy.class);
+            case R.id.nav_account_fy:
+                Intent ie = new Intent(NavigationFY.this, ViewProfileStudentFY.class);
                 startActivity(ie);
                 break;
-            case R.id.nav_aboutus_fy:
-                Intent intent= new Intent(NavigationFY.this,aboutus.class);
+            case R.id.nav_logout_fy:
+                Intent intent= new Intent(NavigationFY.this,LogoutFy.class);
                 startActivity(intent);
                 break;
-            case R.id.nav_logout_fy:
-                Intent ii=new Intent(NavigationFY.this,LogoutFy.class);
+            case R.id.nav_profile_fy:
+                Intent ii=new Intent(NavigationFY.this,ProfileActivityStudentFY.class);
                 startActivity(ii);
                 break;
 

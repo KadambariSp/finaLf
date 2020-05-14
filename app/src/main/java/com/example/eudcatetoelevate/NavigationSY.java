@@ -134,25 +134,27 @@ public class NavigationSY extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
             case R.id.nav_home_sy:
-                break;
-            case R.id.nav_profile_sy:
-                Intent i = new Intent(NavigationSY.this, ProfileActivityStudentSy.class);
-                startActivity(i);
-                break;
-            case R.id.nav_account_sy:
-                Intent i1 = new Intent(NavigationSY.this, ViewProfileStudentSy.class);
-                startActivity(i1);
+                Intent iii=new Intent(NavigationSY.this,PanelSelection.class);
+                startActivity(iii);
                 break;
             case R.id.nav_explore_sy:
-                Intent i4 = new Intent(NavigationSY.this, swipesy.class);
-                startActivity(i4);
+                Intent i = new Intent(NavigationSY.this, swipesy.class);
+                startActivity(i);
                 break;
             case R.id.nav_aboutus_sy:
-                Intent abt = new Intent(NavigationSY.this, aboutus.class);
-                startActivity(abt);
+                Intent i1 = new Intent(NavigationSY.this, aboutus.class);
+                startActivity(i1);
+                break;
+            case R.id.nav_account_sy:
+                Intent i4 = new Intent(NavigationSY.this, ViewProfileStudentSy.class);
+                startActivity(i4);
                 break;
             case R.id.nav_logout_sy:
-                Intent logout = new Intent(NavigationSY.this, LogoutSY.class);
+                Intent abt = new Intent(NavigationSY.this, LogoutSY.class);
+                startActivity(abt);
+                break;
+            case R.id.nav_profile_sy:
+                Intent logout = new Intent(NavigationSY.this, ProfileActivityStudentSy.class);
                 startActivity(logout);
                 break;
 

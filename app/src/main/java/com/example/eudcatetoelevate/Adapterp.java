@@ -61,6 +61,11 @@ public class Adapterp extends PagerAdapter {
                     Intent i=new Intent(contextp,acapdf.class);
                     contextp.startActivity(i);
                 }
+                else if(position == 2){
+                    Intent i2=new Intent(contextp,ShowTextPostActivityStudents.class);
+                    contextp.startActivity(i2);
+                }
+
 
 
             }

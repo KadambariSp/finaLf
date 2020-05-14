@@ -24,8 +24,8 @@ public class swipep extends AppCompatActivity {
         modelp = new ArrayList<>();
         modelp.add(new Modelp(R.drawable.finalno, "Notice", "All Notices regarding Your Children's Education Most Important PARENT TEACHER MEETINGS and TO CHECK WHETHER YOUR CHILD ATTEND EACH AND EVERY LECTURE OR NOT?"));
         modelp.add(new Modelp(R.drawable.academiccal, "Academic Calender", "Academical Activities!"));
-
-        adapterp = new Adapterp(modelp, this);
+        modelp.add(new Modelp(R.drawable.dlist,"Text Notices","Small form of Notices , (Text Format)"));
+         adapterp = new Adapterp(modelp, this);
 
         viewPager4 = findViewById(R.id.viewPager4);
         viewPager4.setAdapter(adapterp);

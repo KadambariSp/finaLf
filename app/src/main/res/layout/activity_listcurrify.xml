@@ -33,7 +33,7 @@
             android:elevation="10dp"
             android:layout_below="@id/tvasach"
             android:layout_marginTop="30dp"
-            android:background="@drawable/newbgforlistview"
+            android:background="@drawable/hop"
             android:padding="10dp"
             android:textAlignment="center"
             android:touchscreenBlocksFocus="true">

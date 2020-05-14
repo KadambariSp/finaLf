@@ -25,17 +25,17 @@
             android:textStyle="bold"
             />
         <ListView
-            android:padding="10dp"
-            android:layout_below="@id/tvasach"
-            android:layout_width="match_parent"
-            android:layout_marginTop="30dp"
-            android:textAlignment="center"
-            android:touchscreenBlocksFocus="true"
-            android:background="@drawable/coesabg"
+            android:layout_centerHorizontal="true"
             android:id="@+id/listView"
-            android:layout_height="match_parent">
-
-        </ListView>
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:elevation="10dp"
+            android:layout_below="@id/tvasach"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/hop"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:touchscreenBlocksFocus="true"/>
 
 
     </RelativeLayout>

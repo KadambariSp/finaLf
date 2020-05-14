@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF"
+    android:background="@drawable/hop"
     android:padding="20dp"
     tools:context=".hop">
 
@@ -14,12 +14,12 @@
         android:layout_width="match_parent"
         android:textStyle="bold"
         android:layout_height="wrap_content"
-
+android:layout_marginTop="120dp"
         android:fontFamily="@font/montserratmedium"
         android:padding="2dp"
         android:textAlignment="center"
         android:text="@string/hopsite"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#FFF"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,7 @@
         android:id="@+id/hop"
         android:layout_gravity="center"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="68dp"
         android:src="@drawable/head"

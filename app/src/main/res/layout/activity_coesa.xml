@@ -1,243 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-<LinearLayout
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#FFF"
-    android:orientation="vertical"
-    tools:context=".coesa">
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:elevation="10dp"
-        android:layout_marginTop="40dp"
-        android:id="@+id/primaryitem"
-        android:background="@drawable/coesabg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="24dp"
-        android:padding="12dp">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/president" />
+        android:background="#FFF"
+        android:orientation="vertical"
+        tools:context=".coesa">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/primaryitem"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="8dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/coesabg"
+            android:elevation="10dp"
+            android:padding="12dp">
 
-            <TextView
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/presssss" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/fredoka"
-                android:text="PRESIDENT"
-                android:textColor="#FFF"
-                android:textSize="18sp" />
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratmedium"
-                android:text="FOR THIRD YEAR STUDENTS"
-                android:textStyle="bold"
-                android:textColor="#000"
-                android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka"
+                    android:text="PRESIDENT"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="FOR THIRD YEAR STUDENTS"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:elevation="10dp"
-        android:id="@+id/secondaryitem"
-        android:layout_width="match_parent"
-        android:background="@drawable/coesabgone"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="24dp"
-        android:orientation="horizontal"
-        android:padding="12dp"
-
-        >
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/sec"
-            tools:ignore="ContentDescription" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/secondaryitem"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="8dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/coesabgone"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:padding="12dp"
 
-            <TextView
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/seccccccccccccc"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/fredoka"
-                android:text="SECREATARY"
-                android:textColor="#000000"
-                android:textSize="18sp" />
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratmedium"
-                android:text="FOR SECOND YEAR STUDENT"
-                android:textColor="@color/colorPrimary"
-                android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka"
+                    android:text="SECREATARY"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="FOR SECOND YEAR STUDENTS"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:elevation="10dp"
-        android:id="@+id/thirditem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@drawable/coesabgone"
-        android:layout_marginBottom="24dp"
-        android:layout_marginTop="60dp"
-        android:orientation="horizontal"
-        android:padding="12dp"
-
-        >
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/head" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/thirditem"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="8dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/hop"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:padding="12dp"
 
-            <TextView
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/head" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/fredoka"
-                android:text="HEAD OF PANEL"
-                android:textColor="#FFF"
-                android:textSize="18sp" />
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratmedium"
-                android:text="FOR FIRST YEAR STUDENT"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka"
+                    android:text="HEAD OF PANEL"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="FOR FIRST YEAR STUDENTS"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:elevation="10dp"
-        android:id="@+id/fouritem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@drawable/coesabg"
-        android:layout_marginBottom="24dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="70dp"
-        android:padding="12dp">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/tech" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/fouritem"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="8dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/technicalheadbg"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:padding="12dp">
 
-            <TextView
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/technicalhead" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:fontFamily="@font/fredoka"
-                android:text="TECHNICAL HEAD"
-                android:textColor="#000000"
-                android:textSize="18sp" />
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratmedium"
-                android:text="FOR SECOND YEAR STUDENT"
-                android:textColor="@color/colorPrimary"
-                android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:fontFamily="@font/fredoka"
+                    android:text="TECHNICAL HEAD"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="FOR SECOND YEAR STUDENTS"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/fiveitem"
-        android:elevation="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/evecoesa"
-        android:orientation="horizontal"
-        android:layout_marginTop="80dp"
-        android:padding="12dp">
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/eve" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/fiveitem"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="12dp"
-            android:layout_marginTop="8dp"
-            android:orientation="vertical">
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/evecoesa"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            android:padding="12dp">
 
-            <TextView
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/eve" />
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/fredoka"
-                android:text="EVENT MANAGER"
-                android:textColor="#FFF"
-                android:textSize="18sp" />
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratmedium"
-                android:textStyle="bold"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka"
+                    android:text="EVENT MANAGER"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
 
-                android:text="FOR THIRD YEAR STUDENT"
-                android:textColor="#000"
-                android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="FOR THIRD YEAR STUDENTS"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
-
     </LinearLayout>
-
-</LinearLayout>
 </ScrollView>
