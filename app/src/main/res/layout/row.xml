@@ -28,7 +28,7 @@
         android:id="@+id/rImageView"
         android:scaleType="centerCrop"
         android:adjustViewBounds="true"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:background="@drawable/loading"
         />
     <TextView
@@ -42,7 +42,7 @@
         android:textAlignment="center"
         android:id="@+id/rDescriptionTv"
         android:text="This is the Long Multi Line Description of Image.if description text Contains more than 3 lines then it will be trimed to three lines and three dots are Displayed in thissssssssssssssssss "
-        android:textSize="13sp"
+        android:textSize="20sp"
         />
 
 </LinearLayout>

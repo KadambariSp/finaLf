@@ -80,7 +80,7 @@ public class PostListActivity extends AppCompatActivity {
     private void showDeleteDataDialog(final String currentTitle, final String currentImage) {
         AlertDialog.Builder builder = new AlertDialog.Builder(PostListActivity.this);
         builder.setTitle("Delete");
-        builder.setMessage("Are you sure to delete this post");
+        builder.setMessage("Are you sure you want to delete this Notice ??");
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int i) {
@@ -91,7 +91,7 @@ public class PostListActivity extends AppCompatActivity {
                         for (DataSnapshot ds: dataSnapshot.getChildren()) {
                             ds.getRef().removeValue();
                         }
-                        Toast.makeText(PostListActivity.this, "Post deleted successfully...", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(PostListActivity.this, "Notice deleted successfully...", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
@@ -103,7 +103,7 @@ public class PostListActivity extends AppCompatActivity {
                 mPictureRefe.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(PostListActivity.this, "Image deleted successfully...", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(PostListActivity.this, "Image from database deleted successfully...", Toast.LENGTH_SHORT).show();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -157,6 +157,7 @@ public class PostListActivity extends AppCompatActivity {
                         final String cDescr = getItem(position).getDescription();
                         final String cImage = getItem(position).getImage();
                         AlertDialog.Builder builder = new AlertDialog.Builder(PostListActivity.this);
+                        builder.setTitle("What action you want to perform?");
                         String[] options = {"Update", "Delete"};
                         builder.setItems(options, new DialogInterface.OnClickListener() {
                             @Override
@@ -225,6 +226,7 @@ public class PostListActivity extends AppCompatActivity {
                         final String cDescr = getItem(position).getDescription();
                         final String cImage = getItem(position).getImage();
                         AlertDialog.Builder builder = new AlertDialog.Builder(PostListActivity.this);
+                        builder.setTitle("What action you want to perform??");
                         String[] options = {"Update", "Delete"};
                         builder.setItems(options, new DialogInterface.OnClickListener() {
                             @Override
@@ -305,7 +307,7 @@ public class PostListActivity extends AppCompatActivity {
     private void showSortDialog() {
         String[] sortOptions={"Newest","Oldest"};
         AlertDialog.Builder builder= new AlertDialog.Builder(this);
-        builder.setTitle("Sort by")
+        builder.setTitle("Sort by ?")
                 .setIcon(R.drawable.sort)
                 .setItems(sortOptions, new DialogInterface.OnClickListener() {
                     @Override
