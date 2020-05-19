@@ -139,6 +139,7 @@ public class NavigationFY extends AppCompatActivity implements NavigationView.On
             case R.id.nav_aboutus_fy:
                 Intent i3 = new Intent(NavigationFY.this, aboutus.class);
                 startActivity(i3);
+                break;
             case R.id.nav_account_fy:
                 Intent ie = new Intent(NavigationFY.this, ViewProfileStudentFY.class);
                 startActivity(ie);

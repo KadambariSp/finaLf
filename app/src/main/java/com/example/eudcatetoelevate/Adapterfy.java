@@ -75,7 +75,7 @@ public class Adapterfy extends PagerAdapter {
                     contextfy.startActivity(iy);
                 }
                 else if(position==5){
-                    Intent intent= new Intent(contextfy,viewcurrity.class);
+                    Intent intent= new Intent(contextfy,listcurrify.class);
                     contextfy.startActivity(intent);}
                       else if(position==6){
                         Intent intent4= new Intent(contextfy,coesa.class);

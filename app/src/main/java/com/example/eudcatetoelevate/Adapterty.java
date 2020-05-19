@@ -75,7 +75,7 @@ public class Adapterty extends PagerAdapter {
                     contextty.startActivity(iy);
                 }
                 else if(position==5){
-                    Intent iy=new Intent(contextty,viewcurrity.class);
+                    Intent iy=new Intent(contextty,listcurrity.class);
                     contextty.startActivity(iy);
                 }
                 else if(position==6){
