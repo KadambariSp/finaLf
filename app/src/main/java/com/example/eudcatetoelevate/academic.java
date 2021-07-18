@@ -1,12 +1,10 @@
 package com.example.eudcatetoelevate;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.WindowManager;
 
 import com.github.barteksc.pdfviewer.PDFView;
-
 public class academic extends AppCompatActivity {
     PDFView acapd;
     @Override
