@@ -74,7 +74,7 @@
             android:layout_marginTop="2dp"
             android:id="@+id/names"
             android:fontFamily="@font/montserratmedium"
-            android:text="Kadambari Patangrao \n Bhagyashree Narwade \n Kajal Gomle \n Sarika Shete"
+            android:text="Kadambari Patangrao \n Sarika Shete"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="16sp"

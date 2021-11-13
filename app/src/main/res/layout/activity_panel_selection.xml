@@ -24,7 +24,7 @@
             app:expandedTitleMarginStart="20dp"
             app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Headline"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"
-            app:title="COMPUTER DEPARTMENT"
+            app:title="St.Joseph high school"
             >
 
 
@@ -106,7 +106,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:textSize="10sp"
-                            android:text="For First Second and Third year Students of Computer Department"
+                            android:text="For 8th to 10th std students St.Joseph high school"
                             android:textColor="@color/colorPrimary"
                             app:fontFamily="@font/montserratmedium" />
 
@@ -213,7 +213,7 @@
                             android:textSize="10sp"
                             android:padding="5dp"
                             android:fontFamily="@font/montserratmedium"
-                            android:text="All parents of GPMCO department"
+                            android:text="All parents"
                             android:textColor="@color/colorPrimary" />
 
                     </LinearLayout>

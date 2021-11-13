@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:fontFamily="@font/fredoka"
-                        android:text="FIRST YEAR (BOTH SHIFTS)"
+                        android:text="8th standard"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
                     <RelativeLayout
@@ -76,14 +76,13 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="In the Very First Year of Your diploma You have to learn something other than coding Like , See below "
-                            android:fontFamily="@font/montserratmedium"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="15dp"
-                            android:textStyle="italic"
+                            android:fontFamily="@font/montserratmedium"
+                            android:text="You are entering the high school phase. Here  are some importanat subjects which will clear uo your base"
                             android:textColor="@color/black_overlay"
                             android:textSize="11sp"
-                            />
+                            android:textStyle="italic" />
 
 
                     </RelativeLayout>
@@ -114,15 +113,16 @@
                                 android:src="@drawable/chemistry1"
                                 android:layout_centerInParent="true" />
                         </RelativeLayout>
+
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="CHEMISTRY"
-                            android:textSize="12sp"
-                            android:textAlignment="center"
-                            android:gravity="center_horizontal"
                             android:fontFamily="@font/montserratmedium"
+                            android:gravity="center_horizontal"
+                            android:text="General Science"
+                            android:textAlignment="center"
                             android:textColor="#000"
+                            android:textSize="12sp"
 
                             />
 
@@ -147,13 +147,14 @@
                                 android:src="@drawable/edg1"
                                 android:layout_centerInParent="true" />
                         </RelativeLayout>
+
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="EDG"
-                            android:textAlignment="center"
-                            android:gravity="center_horizontal"
                             android:fontFamily="@font/montserratmedium"
+                            android:gravity="center_horizontal"
+                            android:text="Technical drawing"
+                            android:textAlignment="center"
                             android:textColor="#000"
 
                             />

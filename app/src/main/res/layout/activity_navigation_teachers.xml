@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:fontFamily="@font/fredoka"
-                        android:text="Computer Department "
+                        android:text="St.Joseph High School"
                         android:textColor="@color/colorPrimary"
                         android:textSize="28sp" />
                     <RelativeLayout
@@ -235,7 +235,7 @@
                             android:textStyle="italic"
                             android:textColor="@color/darkblue"
                             android:fontFamily="@font/montserratmedium"
-                            android:text="WHY??????"
+                            android:text="WHY?"
                             />
                     </LinearLayout>
                     <androidx.recyclerview.widget.RecyclerView

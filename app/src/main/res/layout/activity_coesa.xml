@@ -48,7 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserratmedium"
-                    android:text="FOR THIRD YEAR STUDENTS"
+                    android:text="10th std"
                     android:textColor="#000"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -96,7 +96,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserratmedium"
-                    android:text="FOR SECOND YEAR STUDENTS"
+                    android:text="9th std"
                     android:textColor="#000"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -142,7 +142,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserratmedium"
-                    android:text="FOR FIRST YEAR STUDENTS"
+                    android:text="8th and 9th std"
                     android:textColor="#000"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -187,7 +187,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserratmedium"
-                    android:text="FOR SECOND YEAR STUDENTS"
+                    android:text="9th std"
                     android:textColor="#000"
                     android:textSize="14sp"
                     android:textStyle="bold" />
